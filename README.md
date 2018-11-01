@@ -4,3 +4,10 @@ Purpose of this app is to be a tool to share your work with other workspace user
 More information about ompun paja [here](https://www.helmet.fi/fi-FI/Kirjastot_ja_palvelut/Ison_Omenan_kirjasto/Ison_Omenan_omat/Ompun_Paja(99291)).
 
 ![Image of Ompun paja workspace](https://www.helmet.fi/download/noname/%7B674124AA-3292-4DA8-9054-01804612919A%7D/67479?exactwidth=680&exactheight=382)
+
+# Developers
+
+Antti | Mikael | Leo | Tri
+------------ | ------------- | ------------- | -------------
+<img src="https://avatars0.githubusercontent.com/u/33100455?s=460&v=4" width="150" height="150"> | <img src="https://avatars3.githubusercontent.com/u/22050325?s=460&v=4" width="150" height="150"> | <img src="https://avatars0.githubusercontent.com/u/44428019?s=460&v=4" width="150" height="150"> | <img src="https://avatars1.githubusercontent.com/u/25382052?s=460&v=4" width="150" height="150">
+https://github.com/anttinym | https://github.com/ahlstronomi | https://github.com/0leo | https://github.com/tripheo0412
