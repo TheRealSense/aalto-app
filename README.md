@@ -3,7 +3,7 @@ Purpose of this app is to be a tool to share your work with other workspace user
 
 More information about Ompun paja [here](https://www.helmet.fi/fi-FI/Kirjastot_ja_palvelut/Ison_Omenan_kirjasto/Ison_Omenan_omat/Ompun_Paja(99291)).
 
-![Image of Ompun paja workspace](https://www.helmet.fi/download/noname/%7B674124AA-3292-4DA8-9054-01804612919A%7D/67479?exactwidth=680&exactheight=382)
+<img src="https://www.helmet.fi/download/noname/%7B674124AA-3292-4DA8-9054-01804612919A%7D/67479?exactwidth=680&exactheight=382" width="400" height="200">
 
 # Developers
 
