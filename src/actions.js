@@ -91,12 +91,15 @@ function logInFailure(err) {
 export function authenticate(username, password) {
   return (dispatch) => {
     dispatch(logIn())
+    console.warn('dispatch run ', username, password)
     Auth.signIn(username, password)
       .then(user => {
+        console.warn('sucess ', user)
         dispatch(logInSuccess(user))
         dispatch(showSignInConfirmationModal())
       })
       .catch(err => {
+        console.warn('errrrrrr')
         console.log('errror from signIn: ', err)
         dispatch(logInFailure(err))
       });
@@ -120,7 +123,17 @@ export function confirmUserLogin(authCode) {
     dispatch(confirmLogIn())
     const { auth: { user }} = getState()
     console.log('state: ', getState())
+    console.warn(user)
     dispatch(confirmLoginSuccess(user))
+    // Auth.confirmSignIn(user, authCode)
+    //   .then(data => {
+    //     console.log('data from confirmLogin: ', data)
+    //     dispatch(confirmLoginSuccess(data))
+    //   })
+    //   .catch(err => {
+    //     console.log('error signing in: ', err)
+    //     dispatch(confirmLogIn(err))
+    //   })
   }
 }
 
