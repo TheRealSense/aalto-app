@@ -1,4 +1,4 @@
-# Workspace Project Social network & Help tool
+# Creative Workspace Social Network & Help tool
 Purpose of this app is to be a tool to share your work with other workspace users and get help with your projects. Tool will be focused on one workspace in particular, Ompun paja in Iso Omena library.
 
 More information about Ompun paja [here](https://www.helmet.fi/fi-FI/Kirjastot_ja_palvelut/Ison_Omenan_kirjasto/Ison_Omenan_omat/Ompun_Paja(99291)).
