@@ -97,7 +97,7 @@ export default (state = initialState, action) => {
       return {
         isAuthenticating: false,
         user: action.user,
-        showSignInConfirmationModal: true
+        showSignInConfirmationModal: false
       }
     case LOG_IN_FAILURE:
       return {

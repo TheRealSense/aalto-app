@@ -90,25 +90,7 @@ class SignIn extends Component<{}> {
         <Text style={[styles.errorMessage, signInError && { color: 'black' }]}>Error logging in. Please try again.</Text>
         <Text style={[styles.errorMessage, signInError && { color: 'black' }]}>{signInErrorMessage}</Text>
         {
-          showSignInConfirmationModal && (
-            <Modal>
-              <View style={styles.modal}>
-                <Input
-                  placeholder="Authorization Code"
-                  type='authCode'
-                  keyboardType='numeric'
-                  onChangeText={this.onChangeText}
-                  value={this.state.authCode}
-                  keyboardType='numeric'
-                />
-                <Button
-                  title='Confirm'
-                  onPress={this.confirm.bind(this)}
-                  isLoading={isAuthenticating}
-                />
-              </View>
-            </Modal>
-          )
+          showSignInConfirmationModal 
         }
       </View>
     );

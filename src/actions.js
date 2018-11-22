@@ -96,7 +96,8 @@ export function authenticate(username, password) {
       .then(user => {
         console.warn('sucess ', user)
         dispatch(logInSuccess(user))
-        dispatch(showSignInConfirmationModal())
+        dispatch(confirmLoginSuccess(user))
+        //dispatch(showSignInConfirmationModal())
       })
       .catch(err => {
         console.warn('errrrrrr')
@@ -125,15 +126,15 @@ export function confirmUserLogin(authCode) {
     console.log('state: ', getState())
     console.warn(user)
     dispatch(confirmLoginSuccess(user))
-    // Auth.confirmSignIn(user, authCode)
-    //   .then(data => {
-    //     console.log('data from confirmLogin: ', data)
-    //     dispatch(confirmLoginSuccess(data))
-    //   })
-    //   .catch(err => {
-    //     console.log('error signing in: ', err)
-    //     dispatch(confirmLogIn(err))
-    //   })
+    Auth.confirmSignIn(user, authCode)
+      .then(data => {
+        console.log('data from confirmLogin: ', data)
+        dispatch(confirmLoginSuccess(data))
+      })
+      .catch(err => {
+        console.log('error signing in: ', err)
+        dispatch(confirmLogIn(err))
+      })
   }
 }
 
