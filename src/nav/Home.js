@@ -6,7 +6,8 @@ import {
   Image,
   Button,
   Animated,
-  Dimensions
+  Dimensions,
+  TouchableOpacity
 } from 'react-native'
 
 import { connect } from 'react-redux'
@@ -22,6 +23,20 @@ class Home extends React.Component {
   }
   state = {
     username: ''
+  }
+  state = {
+    location: null
+  }
+  findCoordinates = () => {
+    navigator.geolocation.getCurrentPosition(
+      position => {
+        const location = JSON.stringify(position);
+
+        this.setState({ location });
+      },
+      error => Alert.alert(error.message),
+      { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 }
+    )
   }
   AnimatedScale = new Animated.Value(1)
   componentDidMount() {
@@ -68,6 +83,10 @@ class Home extends React.Component {
             style={{ tintColor: colors.primary, width: width / 2, height: width / 2, transform: [{scale: this.AnimatedScale}]}}
             resizeMode='contain'
           />
+          <TouchableOpacity onPress={this.findCoordinates}>
+            <Text style={styles.welcome}>Current Location</Text>
+            <Text>Location: {this.state.location}</Text>
+          </TouchableOpacity>
           <Text onPress={this.logout.bind(this)} style={styles.welcome}>Logout</Text>
         </View>
       </View>
