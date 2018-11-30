@@ -1,25 +1,23 @@
-import {name as appName} from './app.json';
+import Amplify from 'aws-amplify'
 import React from 'react'
-import { AppRegistry } from 'react-native';
-import App from './src/App';
+import { AppRegistry } from 'react-native'
 
-// redux
 import { createStore, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
-import rootReducer from './src/reducers'
 import thunk from 'redux-thunk'
+import rootReducer from './src/reducers'
+import App from './src/App'
+import { name as appName } from './app.json'
+import config from './src/aws-exports'
+
 const store = createStore(rootReducer, applyMiddleware(thunk))
 
-// Amplify
-import config from './src/aws-exports' // this needs to be created or added by you, see README
-import Amplify from 'aws-amplify'
-Amplify.configure(config);
+Amplify.configure(config)
 
-// App
 const ReduxApp = () => (
-  <Provider store={store}>
-    <App />
-  </Provider>
+	<Provider store={store}>
+		<App />
+	</Provider>
 )
 
-AppRegistry.registerComponent(appName, () => ReduxApp);
+AppRegistry.registerComponent(appName, () => ReduxApp)
