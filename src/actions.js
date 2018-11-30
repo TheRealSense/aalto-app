@@ -1,3 +1,6 @@
+
+import { Alert } from 'react-native'
+import { Auth } from 'aws-amplify'
 import {
 	LOG_IN,
 	LOG_IN_SUCCESS,
@@ -13,9 +16,6 @@ import {
 	CONFIRM_SIGNUP_FAILURE,
 	CONFIRM_LOGIN,
 	CONFIRM_LOGIN_SUCCESS} from './reducers/auth'
-
-import { Alert } from 'react-native'
-import { Auth } from 'aws-amplify'
 
 function signUp() {
 	return {
