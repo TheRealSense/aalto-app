@@ -13,6 +13,7 @@ Here are the instructions to get the app running:
 
 * `git` https://git-scm.com/
 * `nodejs + npm` https://nodejs.org/en/download/
+* `Xcode` https://developer.apple.com/xcode/ or `Android Studio` https://developer.android.com/studio/
 
 
 ### Clone the repository:
