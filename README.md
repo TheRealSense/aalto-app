@@ -5,7 +5,7 @@ More information about Ompun paja [here](https://www.helmet.fi/fi-FI/Kirjastot_j
 
 <img src="https://www.helmet.fi/download/noname/%7B674124AA-3292-4DA8-9054-01804612919A%7D/67479?exactwidth=680&exactheight=382" width="400" height="200">
 
-# Running the app on an emulator (development / debug purposes)
+## Running the app on an emulator (development / debug purposes)
 
 Here are the instructions to get the app running:
 
