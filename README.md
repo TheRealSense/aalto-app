@@ -9,7 +9,7 @@ More information about Ompun paja [here](https://www.helmet.fi/fi-FI/Kirjastot_j
 
 Here are the instructions to get the app running:
 
-### Prerequisites
+### Prerequisites:
 
 * `git` https://git-scm.com/
 * `nodejs + npm` https://nodejs.org/en/download/
