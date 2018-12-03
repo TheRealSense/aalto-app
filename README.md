@@ -52,6 +52,6 @@ and enjoy! :sunglasses:
 # Developers
 
 Antti | Mikael | Tri
------------- | ------------- | ------------- | -------------
+------------ | ------------- | -------------
 <img src="https://avatars0.githubusercontent.com/u/33100455?s=460&v=4" width="150" height="150"> | <img src="https://avatars3.githubusercontent.com/u/22050325?s=460&v=4" width="150" height="150"> | <img src="https://avatars1.githubusercontent.com/u/25382052?s=460&v=4" width="150" height="150">
 https://github.com/anttinym | https://github.com/ahlstronomi | https://github.com/tripheo0412
