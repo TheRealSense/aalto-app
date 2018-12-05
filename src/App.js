@@ -16,32 +16,25 @@ class App extends React.Component {
 	state = {
 		user: {},
 		isLoading: true,
-		loggedIn: false
 	}
 
 	async componentDidMount() {
-		let { isLoading, user, loggedIn } = this.state
+		// let { user } = this.state
 
-		if (isLoading) return null
-		this.state.loggedIn = false
-		if (user.username) {
-			this.state.loggedIn = true
-		}
-
-		if (loggedIn) {
-			StatusBar.setHidden(true)
-			if (Platform.OS === 'android') {
-				Linking.getInitialURL().then(url => {
-					this.navigate(url)
-				})
-			} else {
-				Linking.addEventListener('url', this.handleOpenURL)
-			}
-		}
 
 		try {
 			const user = await Auth.currentAuthenticatedUser()
 			this.setState({ user, isLoading: false })
+			if (user.username) {
+				StatusBar.setHidden(true)
+				if (Platform.OS === 'android') {
+					Linking.getInitialURL().then(url => {
+						this.navigate(url)
+					})
+				} else {
+					Linking.addEventListener('url', this.handleOpenURL)
+				}
+			}
 		} catch (err) {
 			this.setState({ isLoading: false })
 		}
@@ -52,19 +45,24 @@ class App extends React.Component {
 	}
 
 	handleOpenURL = event => {
+		//console.warn('handleOpenURL')
 		this.navigate(event.url)
 	}
 
 	navigate = url => {
+
+		//console.warn('navigating')
+
 		// eslint-disable-next-line react/prop-types
-		let { navigation } = this.props
-		const { navigate } = navigation
+		// let { navigation } = this.props
+
 		const route = url.replace(/.*?:\/\//g, '')
-		const id = route.match(/\/([^\/]+)\/?$/)[1]
+		// const id = route.match(/\/([^\/]+)\/?$/)[1]
 		const routeName = route.split('/')[0]
 
-		if (routeName === 'people') {
-			navigate('People', { id, name: 'chris' })
+		if (routeName === 'tools') {
+			// console.warn(`${navigation.navigate}`)
+			// navigation.navigate('Tools', { id, name: 'printer' })
 		}
 	}
 
@@ -77,7 +75,13 @@ class App extends React.Component {
 		}
 	}
 	render() {
-		let { loggedIn } = this.state
+		const { isLoading, user } = this.state
+
+		if (isLoading) return null
+		let loggedIn = false
+		if (user.username) {
+			loggedIn = true
+		}
 		if (loggedIn) {
 			return <Nav />
 		}
