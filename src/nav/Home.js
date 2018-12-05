@@ -1,13 +1,14 @@
+/* eslint-disable react/jsx-no-bind */
 import React from 'react'
 import {
-  View,
-  Text,
-  StyleSheet,
-  Image,
-  Button,
-  Animated,
-  Dimensions,
-  TouchableOpacity
+	View,
+	Text,
+	StyleSheet,
+	Animated,
+	Dimensions,
+	TouchableOpacity,
+	Platform,
+	Linking
 } from 'react-native'
 
 import { connect } from 'react-redux'
@@ -15,118 +16,152 @@ import { Auth } from 'aws-amplify'
 
 import { logOut } from '../actions'
 import { colors, fonts } from '../theme'
-const { width, height } = Dimensions.get('window')
+
+const { width } = Dimensions.get('window')
 
 class Home extends React.Component {
-  static navigationOptions = {
-    header: null
-  }
-  state = {
-    username: ''
-  }
-  state = {
-    location: null
-  }
-  findCoordinates = () => {
-    navigator.geolocation.getCurrentPosition(
-      position => {
-        const location = JSON.stringify(position);
+	static navigationOptions = {
+		header: null
+	}
 
-        this.setState({ location });
-      },
-      error => Alert.alert(error.message),
-      { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 }
-    )
-  }
-  AnimatedScale = new Animated.Value(1)
-  componentDidMount() {
-    this.animate()
-  }
-  logout() {
-    Auth.signOut()
-      .then(() => {
-        this.props.dispatchLogout()
-      })
-      .catch(err => {
-        console.log('err: ', err)
-      })
-  }
-  navigate() {
-    this.props.navigation.navigate('Route1')
-  }
-  animate() {
-    Animated.timing(
-      this.AnimatedScale,
-      {
-        toValue: .8,
-        duration: 1250,
-        useNativeDriver: true
-      }
-    ).start(() => {
-      Animated.timing(
-        this.AnimatedScale,
-        {
-          toValue: 1,
-          duration: 1250,
-          useNativeDriver: true
-        }
-      ).start(() => this.animate())
-    })
-  }
-  render() {
-    return (
-      <View style={styles.container}>
-        <View style={styles.homeContainer}>
-          <Text style={styles.welcome}>Welcome</Text>
-          <Animated.Image
-            source={require('../assets/boomboxcropped.png')}
-            style={{ tintColor: colors.primary, width: width / 2, height: width / 2, transform: [{scale: this.AnimatedScale}]}}
-            resizeMode='contain'
-          />
-          <TouchableOpacity onPress={this.findCoordinates}>
-            <Text style={styles.welcome}>Current Location</Text>
-            <Text>Location: {this.state.location}</Text>
-          </TouchableOpacity>
-          <Text onPress={this.logout.bind(this)} style={styles.welcome}>Logout</Text>
-        </View>
-      </View>
-    )
-  }
+	state = {
+		location: null
+	}
+
+	AnimatedScale = new Animated.Value(1)
+
+	componentDidMount() {
+		this.animate()
+		if (Platform.OS === 'android') {
+			Linking.getInitialURL().then(url => {
+				this.navigate(url)
+			})
+		} else {
+			Linking.addEventListener('url', this.handleOpenURL)
+		}
+	}
+
+	componentWillUnmount() {
+		Linking.removeEventListener('url', this.handleOpenURL)
+	}
+
+	findCoordinates = () => {
+		navigator.geolocation.getCurrentPosition(position => {
+			const location = JSON.stringify(position)
+
+			this.setState({ location })
+		})
+	}
+
+	handleOpenURL = event => {
+		this.navigate(event.url)
+	}
+
+	navigate = url => {
+		// eslint-disable-next-line react/prop-types
+		let { navigation } = this.props
+
+		const route = url.replace(/.*?:\/\//g, '')
+		// eslint-disable-next-line no-useless-escape
+		const id = route.match(/\/([^\/]+)\/?$/)[1]
+		const routeName = route.split('/')[0]
+
+		if (routeName === 'tools') {
+			navigation.navigate('Tools', { id, name: 'printer' })
+		}
+	}
+
+	logout() {
+		// eslint-disable-next-line react/prop-types
+		const { dispatchLogout } = this.props
+
+		Auth.signOut().then(() => {
+			dispatchLogout()
+		})
+	}
+
+	animate() {
+		Animated.timing(this.AnimatedScale, {
+			toValue: 0.8,
+			duration: 1250,
+			useNativeDriver: true
+		}).start(() => {
+			Animated.timing(this.AnimatedScale, {
+				toValue: 1,
+				duration: 1250,
+				useNativeDriver: true
+			}).start(() => this.animate())
+		})
+	}
+	render() {
+		const { location } = this.state
+
+		return (
+			<View style={styles.container}>
+				<View style={styles.homeContainer}>
+					<Text style={styles.welcome}>Welcome</Text>
+					<Animated.Image
+						source={require('../assets/boomboxcropped.png')}
+						style={{
+							tintColor: colors.primary,
+							width: width / 2,
+							height: width / 2,
+							transform: [{ scale: this.AnimatedScale }]
+						}}
+						resizeMode="contain"
+					/>
+					<TouchableOpacity onPress={this.navigate}>
+						<Text style={styles.welcome}>Current Location</Text>
+						<Text>Location: {location}</Text>
+					</TouchableOpacity>
+					<Text
+						onPress={this.logout.bind(this)}
+						style={styles.welcome}
+					>
+						Logout
+					</Text>
+				</View>
+			</View>
+		)
+	}
 }
 
 const styles = StyleSheet.create({
-  container: {
-    backgroundColor: 'white',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flex: 1
-  },
-  homeContainer: {
-    alignItems: 'center'
-  },
-  welcome: {
-    fontFamily: fonts.light,
-    color: 'rgba(0, 0, 0, .85)',
-    marginBottom: 26,
-    fontSize: 22,
-    textAlign: 'center'
-  },
-  registration: {
-    fontFamily: fonts.base,
-    color: 'rgba(0, 0, 0, .5)',
-    marginTop: 20,
-    fontSize: 16,
-    paddingHorizontal: 20,
-    textAlign: 'center'
-  }
+	container: {
+		backgroundColor: 'white',
+		alignItems: 'center',
+		justifyContent: 'center',
+		flex: 1
+	},
+	homeContainer: {
+		alignItems: 'center'
+	},
+	welcome: {
+		fontFamily: fonts.light,
+		color: 'rgba(0, 0, 0, .85)',
+		marginBottom: 26,
+		fontSize: 22,
+		textAlign: 'center'
+	},
+	registration: {
+		fontFamily: fonts.base,
+		color: 'rgba(0, 0, 0, .5)',
+		marginTop: 20,
+		fontSize: 16,
+		paddingHorizontal: 20,
+		textAlign: 'center'
+	}
 })
 
 const mapStateToProps = state => ({
-  auth: state.auth
+	auth: state.auth
 })
 
 const mapDispatchToProps = {
-  dispatchLogout: () => logOut()
+	dispatchLogout: () => logOut()
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+export default connect(
+	mapStateToProps,
+	mapDispatchToProps
+)(Home)

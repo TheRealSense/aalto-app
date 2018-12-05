@@ -1,20 +1,13 @@
-import React from 'react'
 import { StackNavigator } from 'react-navigation'
 
 import Home from './Home'
+import Tools from './tools'
 
 const routeConfig = {
-  Home: { screen: Home },
+	Home: { screen: Home },
+	Tools: { screen: Tools }
 }
 
 const StackNav = StackNavigator(routeConfig)
-
-class Nav extends React.Component {
-  render() {
-    return (
-      <StackNav />
-    )
-  }
-}
 
 export default StackNav

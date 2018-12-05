@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 import React from 'react'
 import { StatusBar } from 'react-native'
 
@@ -8,12 +9,19 @@ import Tabs from './auth/Tabs'
 import Nav from './nav/Nav'
 
 class App extends React.Component {
+	static navigationOptions = {
+		title: 'App'
+	}
+
 	state = {
 		user: {},
-		isLoading: true
+		isLoading: true,
 	}
+
 	async componentDidMount() {
+
 		StatusBar.setHidden(true)
+
 		try {
 			const user = await Auth.currentAuthenticatedUser()
 			this.setState({ user, isLoading: false })
@@ -21,6 +29,7 @@ class App extends React.Component {
 			this.setState({ isLoading: false })
 		}
 	}
+
 	async UNSAFE_componentWillReceiveProps() {
 		try {
 			const user = await Auth.currentAuthenticatedUser()
@@ -30,9 +39,11 @@ class App extends React.Component {
 		}
 	}
 	render() {
-		if (this.state.isLoading) return null
+		const { isLoading, user } = this.state
+
+		if (isLoading) return null
 		let loggedIn = false
-		if (this.state.user.username) {
+		if (user.username) {
 			loggedIn = true
 		}
 		if (loggedIn) {
