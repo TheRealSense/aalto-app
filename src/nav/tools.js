@@ -1,9 +1,9 @@
+/* eslint-disable react/prefer-stateless-function */
 import React from 'react'
 import { Text, View, StyleSheet } from 'react-native'
 import PropTypes from 'prop-types'
 
-
-// Hard coded object for development purposes. 
+// Hard coded object for development purposes.
 // This will be replaced by a object requested from the server.
 const tools = {
 	0: {
@@ -21,12 +21,11 @@ const tools = {
 }
 
 class Tools extends React.Component {
-	static navigationOptions = {
-		title: 'Tools'
-	}
+
 	render() {
 		const { navigation } = this.props
 		const { id } = navigation.state.params
+
 		if (!tools[id]) return <Text>Sorry, no data exists for this tool</Text>
 
 		return (

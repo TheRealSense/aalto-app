@@ -1,6 +1,6 @@
 /* eslint-disable no-useless-escape */
 import React from 'react'
-import { StatusBar, Platform, Linking } from 'react-native'
+import { StatusBar } from 'react-native'
 
 import { connect } from 'react-redux'
 import { Auth } from 'aws-amplify'
@@ -19,50 +19,14 @@ class App extends React.Component {
 	}
 
 	async componentDidMount() {
-		// let { user } = this.state
 
+		StatusBar.setHidden(true)
 
 		try {
 			const user = await Auth.currentAuthenticatedUser()
 			this.setState({ user, isLoading: false })
-			if (user.username) {
-				StatusBar.setHidden(true)
-				if (Platform.OS === 'android') {
-					Linking.getInitialURL().then(url => {
-						this.navigate(url)
-					})
-				} else {
-					Linking.addEventListener('url', this.handleOpenURL)
-				}
-			}
 		} catch (err) {
 			this.setState({ isLoading: false })
-		}
-	}
-
-	componentWillUnmount() {
-		Linking.removeEventListener('url', this.handleOpenURL)
-	}
-
-	handleOpenURL = event => {
-		//console.warn('handleOpenURL')
-		this.navigate(event.url)
-	}
-
-	navigate = url => {
-
-		//console.warn('navigating')
-
-		// eslint-disable-next-line react/prop-types
-		// let { navigation } = this.props
-
-		const route = url.replace(/.*?:\/\//g, '')
-		// const id = route.match(/\/([^\/]+)\/?$/)[1]
-		const routeName = route.split('/')[0]
-
-		if (routeName === 'tools') {
-			// console.warn(`${navigation.navigate}`)
-			// navigation.navigate('Tools', { id, name: 'printer' })
 		}
 	}
 
