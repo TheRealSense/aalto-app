@@ -21,7 +21,6 @@ const tools = {
 }
 
 class Tools extends React.Component {
-
 	render() {
 		const { navigation } = this.props
 		const { id } = navigation.state.params

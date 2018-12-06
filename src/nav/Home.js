@@ -6,7 +6,6 @@ import {
 	StyleSheet,
 	Animated,
 	Dimensions,
-	TouchableOpacity,
 	Platform,
 	Linking
 } from 'react-native'
@@ -24,10 +23,6 @@ class Home extends React.Component {
 		header: null
 	}
 
-	state = {
-		location: null
-	}
-
 	AnimatedScale = new Animated.Value(1)
 
 	componentDidMount() {
@@ -43,14 +38,6 @@ class Home extends React.Component {
 
 	componentWillUnmount() {
 		Linking.removeEventListener('url', this.handleOpenURL)
-	}
-
-	findCoordinates = () => {
-		navigator.geolocation.getCurrentPosition(position => {
-			const location = JSON.stringify(position)
-
-			this.setState({ location })
-		})
 	}
 
 	handleOpenURL = event => {
@@ -94,8 +81,6 @@ class Home extends React.Component {
 		})
 	}
 	render() {
-		const { location } = this.state
-
 		return (
 			<View style={styles.container}>
 				<View style={styles.homeContainer}>
@@ -110,10 +95,6 @@ class Home extends React.Component {
 						}}
 						resizeMode="contain"
 					/>
-					<TouchableOpacity onPress={this.navigate}>
-						<Text style={styles.welcome}>Current Location</Text>
-						<Text>Location: {location}</Text>
-					</TouchableOpacity>
 					<Text
 						onPress={this.logout.bind(this)}
 						style={styles.welcome}

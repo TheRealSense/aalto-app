@@ -126,7 +126,6 @@ class SignUp extends Component<{}> {
 								keyboardType="numeric"
 								onChangeText={this.onChangeText}
 								value={this.state.authCode}
-								keyboardType="numeric"
 							/>
 							<Button
 								title="Confirm"
