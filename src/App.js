@@ -15,11 +15,10 @@ class App extends React.Component {
 
 	state = {
 		user: {},
-		isLoading: true,
+		isLoading: true
 	}
 
 	async componentDidMount() {
-
 		StatusBar.setHidden(true)
 
 		try {
