@@ -4,13 +4,14 @@ import {
 	Text,
 	ScrollView,
 	StyleSheet,
-	Image,
 	StatusBar,
-	View
+	FlatList,
+	LinkingIOS
 } from 'react-native'
 import PropTypes from 'prop-types'
-import { colors, fonts } from '../theme'
+// import { colors, fonts } from '../theme'
 import tools from '../toolList'
+import ToolHeader from '../components/ToolHeader'
 
 class Tools extends React.Component {
 	componentDidMount() {
@@ -25,14 +26,20 @@ class Tools extends React.Component {
 
 		return (
 			<ScrollView style={styles.background}>
-				<View style={styles.headerView}>
-					<Image
-						style={styles.image}
-						source={{ uri: tools[id].img }}
-					/>
-					<Text style={styles.toolName}>{tools[id].name}</Text>
-					<Text style={styles.toolType}>{tools[id].type}</Text>
-				</View>
+				<ToolHeader id={id} />
+				<FlatList
+					data={tools[id].info}
+					renderItem={({ item }) =>
+						item.info.forEach(element => {
+							<Text
+								style={styles.item}
+								onPress={() => LinkingIOS.openURL(element.url)}
+							>
+								{item.desc}
+							</Text>
+						})
+					}
+				/>
 			</ScrollView>
 		)
 	}
@@ -42,46 +49,8 @@ const styles = StyleSheet.create({
 	background: {
 		backgroundColor: '#fff'
 	},
-	toolName: {
-		margin: 8,
-		padding: 20,
-		fontSize: 32,
-		textTransform: 'uppercase',
-		fontFamily: fonts.bold,
-		color: '#fff',
-		backgroundColor: colors.primary
-	},
-	toolType: {
-		margin: 8,
-		padding: 10,
-		fontSize: 20,
-		textTransform: 'uppercase',
-		fontFamily: fonts.light,
-		color: '#fff',
-		backgroundColor: '#000'
-	},
-	image: {
-		backgroundColor: '#666',
-		flex: 1,
-		resizeMode: 'cover',
-		position: 'absolute',
-		width: '100%',
-		height: '100%',
-		justifyContent: 'center'
-	},
-	headerView: {
-		flex: 1,
-		alignItems: 'center',
-		justifyContent: 'center',
-		flexDirection: 'column',
-		height: 250
-	},
-	headerGradient: {
-		position: 'absolute',
-		left: 0,
-		right: 0,
-		top: 0,
-		height: 300
+	item: {
+		color: '#0088EE'
 	}
 })
 
