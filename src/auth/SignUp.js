@@ -65,7 +65,7 @@ class SignUp extends Component<{}> {
 			}
 		} = this.props
 
-		const { username, email, password, phone_number } = this.state
+		const { username, email, password, phone_number, authCode } = this.state
 
 		return (
 			<View style={styles.container}>
@@ -134,7 +134,7 @@ class SignUp extends Component<{}> {
 								type="authCode"
 								keyboardType="numeric"
 								onChangeText={this.onChangeText}
-								value={this.state.authCode}
+								value={authCode}
 							/>
 							<Button
 								title="Confirm"
