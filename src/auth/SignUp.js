@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-no-bind */
+/* eslint-disable react/prop-types */
 import React, { Component } from 'react'
 import { Text, View, StyleSheet, Image, Modal } from 'react-native'
 
@@ -21,12 +23,15 @@ class SignUp extends Component<{}> {
 	state = initialState
 
 	componentWillReceiveProps(nextProps) {
+
+		const { auth } = this.props
+
 		const {
 			auth: { showSignUpConfirmationModal }
 		} = nextProps
 		if (
 			!showSignUpConfirmationModal &&
-			this.props.auth.showSignUpConfirmationModal
+			auth.showSignUpConfirmationModal
 		) {
 			this.setState(initialState)
 		}
@@ -40,12 +45,14 @@ class SignUp extends Component<{}> {
 
 	signUp() {
 		const { username, password, email, phone_number } = this.state
-		this.props.dispatchCreateUser(username, password, email, phone_number)
+		const { dispatchCreateUser } = this.props
+		dispatchCreateUser(username, password, email, phone_number)
 	}
 
 	confirm() {
 		const { authCode, username } = this.state
-		this.props.dispatchConfirmUser(username, authCode)
+		const { dispatchConfirmUser } = this.props
+		dispatchConfirmUser(username, authCode)
 	}
 
 	render() {
@@ -57,6 +64,9 @@ class SignUp extends Component<{}> {
 				signUpErrorMessage
 			}
 		} = this.props
+
+		const { username, email, password, phone_number } = this.state
+
 		return (
 			<View style={styles.container}>
 				<View style={styles.heading}>
@@ -70,19 +80,19 @@ class SignUp extends Component<{}> {
 				<Text style={styles.greeting2}>sign up to continue</Text>
 				<View style={styles.inputContainer}>
 					<Input
-						value={this.state.username}
+						value={username}
 						placeholder="User Name"
 						type="username"
 						onChangeText={this.onChangeText}
 					/>
 					<Input
-						value={this.state.email}
+						value={email}
 						placeholder="Email"
 						type="email"
 						onChangeText={this.onChangeText}
 					/>
 					<Input
-						value={this.state.password}
+						value={password}
 						placeholder="Password"
 						secureTextEntry
 						type="password"
@@ -91,9 +101,8 @@ class SignUp extends Component<{}> {
 					<Input
 						placeholder="Phone Number"
 						type="phone_number"
-						keyboardType="numeric"
 						onChangeText={this.onChangeText}
-						value={this.state.phone_number}
+						value={phone_number}
 					/>
 				</View>
 				<Button
