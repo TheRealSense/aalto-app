@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unused-state */
+/* eslint-disable no-console */
 /* eslint-disable react/jsx-no-bind */
 import React from 'react'
 import {
@@ -12,7 +14,7 @@ import {
 
 import { connect } from 'react-redux'
 import { Auth } from 'aws-amplify'
-
+import NfcManager, {Ndef} from 'react-native-nfc-manager'
 import { logOut } from '../actions'
 import { colors, fonts } from '../theme'
 
@@ -34,6 +36,29 @@ class Home extends React.Component {
 		} else {
 			Linking.addEventListener('url', this.handleOpenURL)
 		}
+		NfcManager.start({
+			onSessionClosedIOS: () => {
+				console.log('ios session closed')
+			}
+		})
+			.then(result => {
+				console.log('start OK', result)
+			})
+			.catch(error => {
+				console.warn('device does not support nfc!', error)
+				this.setState({supported: false})
+			})
+		NfcManager.getLaunchTagEvent()
+			.then(tag => {
+				const uri = this.parseUri(tag)
+				console.log('Launch tag:', uri)
+				if (uri) {
+					this.navigate(uri)
+				}
+			})
+			.catch(error => {
+				console.log(error)
+			})
 	}
 
 	componentWillUnmount() {
@@ -43,6 +68,17 @@ class Home extends React.Component {
 	handleOpenURL = event => {
 		this.navigate(event.url)
 	}
+  
+  parseUri = (tag) => {
+  	try {
+  		if (Ndef.isType(tag.ndefMessage[0], Ndef.TNF_WELL_KNOWN, Ndef.RTD_URI)) {
+  			return Ndef.uri.decodePayload(tag.ndefMessage[0].payload)
+  		}
+  	} catch (e) {
+  		console.log(e)
+  	}
+  	return null
+  }
 
 	navigate = url => {
 		// eslint-disable-next-line react/prop-types
@@ -81,29 +117,29 @@ class Home extends React.Component {
 		})
 	}
 	render() {
-		return (
-			<View style={styles.container}>
-				<View style={styles.homeContainer}>
-					<Text style={styles.welcome}>Welcome</Text>
-					<Animated.Image
-						source={require('../assets/boomboxcropped.png')}
-						style={{
-							tintColor: colors.primary,
-							width: width / 2,
-							height: width / 2,
-							transform: [{ scale: this.AnimatedScale }]
-						}}
-						resizeMode="contain"
-					/>
-					<Text
-						onPress={this.logout.bind(this)}
-						style={styles.welcome}
-					>
+  	return (
+  		<View style={styles.container}>
+  			<View style={styles.homeContainer}>
+  				<Text style={styles.welcome}>Welcome</Text>
+  				<Animated.Image
+  					source={require('../assets/boomboxcropped.png')}
+  					style={{
+  						tintColor: colors.primary,
+  						width: width / 2,
+  						height: width / 2,
+  						transform: [{ scale: this.AnimatedScale }]
+  					}}
+  					resizeMode="contain"
+  				/>
+  				<Text
+  					onPress={this.logout.bind(this)}
+  					style={styles.welcome}
+  				>
 						Logout
-					</Text>
-				</View>
-			</View>
-		)
+  				</Text>
+  			</View>
+  		</View>
+  	)
 	}
 }
 
