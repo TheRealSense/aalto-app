@@ -4,19 +4,14 @@ import {
 	Text,
 	ScrollView,
 	StyleSheet,
-	StatusBar,
 	FlatList,
-	LinkingIOS
 } from 'react-native'
 import PropTypes from 'prop-types'
-// import { colors, fonts } from '../theme'
+import { fonts } from '../theme'
 import tools from '../toolList'
 import ToolHeader from '../components/ToolHeader'
 
 class Tools extends React.Component {
-	componentDidMount() {
-		StatusBar.translucent = true
-	}
 
 	render() {
 		const { navigation } = this.props
@@ -27,18 +22,18 @@ class Tools extends React.Component {
 		return (
 			<ScrollView style={styles.background}>
 				<ToolHeader id={id} />
+				<Text style={styles.headline}>Help to get started</Text>
 				<FlatList
 					data={tools[id].info}
-					renderItem={({ item }) =>
-						item.info.forEach(element => {
-							<Text
-								style={styles.item}
-								onPress={() => LinkingIOS.openURL(element.url)}
-							>
-								{item.desc}
-							</Text>
-						})
-					}
+					renderItem={({ item }) => (
+						<Text
+							style={styles.item}
+							onPress={() => navigation.navigate('WebView', { uri: item.url})}
+						>
+							{`${item.desc} →`}
+						</Text>
+					)}
+					keyExtractor={(item, index) => index.toString()}
 				/>
 			</ScrollView>
 		)
@@ -50,7 +45,16 @@ const styles = StyleSheet.create({
 		backgroundColor: '#fff'
 	},
 	item: {
+		fontSize: 18,
+		margin: 10,
 		color: '#0088EE'
+	},
+	headline: {
+		marginLeft: 10,
+		marginTop: 20,
+		marginBottom: 10,
+		fontSize: 28,
+		fontFamily: fonts.bold
 	}
 })
 
