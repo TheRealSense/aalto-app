@@ -19,7 +19,6 @@ const styles = StyleSheet.create({
 		margin: 8,
 		padding: 20,
 		fontSize: 32,
-		textTransform: 'uppercase',
 		fontFamily: fonts.bold,
 		color: '#fff',
 		backgroundColor: colors.primary
@@ -28,10 +27,9 @@ const styles = StyleSheet.create({
 		margin: 8,
 		padding: 10,
 		fontSize: 20,
-		textTransform: 'uppercase',
-		fontFamily: fonts.light,
+		fontFamily: fonts.base,
 		color: '#fff',
-		backgroundColor: '#000'
+		backgroundColor: colors.darkAccent
 	},
 	image: {
 		backgroundColor: '#666',
