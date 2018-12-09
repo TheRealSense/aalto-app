@@ -1,26 +1,18 @@
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react'
-import { Text, View, StyleSheet } from 'react-native'
+import {
+	Text,
+	ScrollView,
+	StyleSheet,
+	FlatList,
+} from 'react-native'
 import PropTypes from 'prop-types'
-
-// Hard coded object for development purposes.
-// This will be replaced by a object requested from the server.
-const tools = {
-	0: {
-		name: '3d-printer'
-	},
-	1: {
-		name: 'Large format printer'
-	},
-	2: {
-		name: 'Sewing machine'
-	},
-	3: {
-		name: 'Saw'
-	}
-}
+import { fonts } from '../theme'
+import tools from '../toolList'
+import ToolHeader from '../components/ToolHeader'
 
 class Tools extends React.Component {
+
 	render() {
 		const { navigation } = this.props
 		const { id } = navigation.state.params
@@ -28,17 +20,41 @@ class Tools extends React.Component {
 		if (!tools[id]) return <Text>Sorry, no data exists for this tool</Text>
 
 		return (
-			<View>
-				<Text style={styles.text}>{tools[id].name}</Text>
-			</View>
+			<ScrollView style={styles.background}>
+				<ToolHeader id={id} />
+				<Text style={styles.headline}>Help to get started</Text>
+				<FlatList
+					data={tools[id].info}
+					renderItem={({ item }) => (
+						<Text
+							style={styles.item}
+							onPress={() => navigation.navigate('WebView', { uri: item.url})}
+						>
+							{`${item.desc} →`}
+						</Text>
+					)}
+					keyExtractor={(item, index) => index.toString()}
+				/>
+			</ScrollView>
 		)
 	}
 }
 
 const styles = StyleSheet.create({
-	text: {
-		margin: 19,
-		fontSize: 22
+	background: {
+		backgroundColor: '#fff'
+	},
+	item: {
+		fontSize: 18,
+		margin: 10,
+		color: '#0088EE'
+	},
+	headline: {
+		marginLeft: 10,
+		marginTop: 20,
+		marginBottom: 10,
+		fontSize: 28,
+		fontFamily: fonts.bold
 	}
 })
 
