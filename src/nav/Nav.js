@@ -1,15 +1,13 @@
-import { StackNavigator } from 'react-navigation'
+import { createStackNavigator } from 'react-navigation'
 
 import Home from './Home'
 import Tools from './tools'
 import WebViewComponent from './webViewComponent'
 
-const routeConfig = {
+const navStack = createStackNavigator({
 	Home: { screen: Home },
 	Tools: { screen: Tools },
-	WebView: { screen: WebViewComponent}
-}
+	WebView: { screen: WebViewComponent }
+})
 
-const StackNav = StackNavigator(routeConfig)
-
-export default StackNav
+export default navStack

@@ -11,8 +11,6 @@ type Props = {|
 |}
 
 export default class EditProfileScreen extends React.Component<Props> {
-	_navListener: NavigationEventSubscription
-
 	static navigationOptions = ({ navigation }: Props) => ({
 		title: 'EDIT PROFILE',
 		// TODO @Jaap: Probably Text is not the correct component here, probably
@@ -34,19 +32,20 @@ export default class EditProfileScreen extends React.Component<Props> {
 	})
 
 	componentDidMount() {
-		this._navListener = this.props.navigation.addListener(
-			'didFocus',
-			() => {
-				StatusBar.setBarStyle('dark-content')
-			}
-		)
+		const { navigation } = this.props
+		this._navListener = navigation.addListener('didFocus', () => {
+			StatusBar.setBarStyle('dark-content')
+		})
 	}
 
+	_navListener: NavigationEventSubscription
+
 	render() {
+		const { navigation } = this.props
 		return (
 			<EditProfileForm
 				registerSave={saveFunc => {
-					this.props.navigation.setParams({ saveFunc })
+					navigation.setParams({ saveFunc })
 				}}
 			/>
 		)

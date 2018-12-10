@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, Image, Text, StyleSheet } from 'react-native'
 
+// eslint-disable-next-line react/prop-types
 const GroupCard = ({ item }) => {
 	const { image, icon, name } = item
 	return (

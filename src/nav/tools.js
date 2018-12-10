@@ -1,18 +1,13 @@
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react'
-import {
-	Text,
-	ScrollView,
-	StyleSheet,
-	FlatList,
-} from 'react-native'
+import { Text, ScrollView, StyleSheet, FlatList } from 'react-native'
+// eslint-disable-next-line import/no-extraneous-dependencies
 import PropTypes from 'prop-types'
 import { fonts } from '../theme'
 import tools from '../toolList'
 import ToolHeader from '../components/ToolHeader'
 
 class Tools extends React.Component {
-
 	render() {
 		const { navigation } = this.props
 		const { id } = navigation.state.params
@@ -28,7 +23,11 @@ class Tools extends React.Component {
 					renderItem={({ item }) => (
 						<Text
 							style={styles.item}
-							onPress={() => navigation.navigate('WebView', { uri: item.url})}
+							onPress={() =>
+								navigation.navigate('WebView', {
+									uri: item.url
+								})
+							}
 						>
 							{`${item.desc} →`}
 						</Text>

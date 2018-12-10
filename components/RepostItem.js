@@ -10,14 +10,16 @@ import RepostIcon from '../images/icons/repost.png'
 import type { Repost } from '../types'
 
 type Props = {
+	// eslint-disable-next-line react/require-default-props
 	onPressLike?: (id: string) => any,
 	repost: Repost
 }
 
 export default class RepostItem extends React.Component<Props> {
 	_onPressLike = () => {
-		if (this.props.onPressLike) {
-			this.props.onPressLike(this.props.repost.id)
+		const { onPressLike, repost } = this.props
+		if (onPressLike) {
+			onPressLike(repost.id)
 		}
 	}
 

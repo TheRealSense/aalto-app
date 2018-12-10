@@ -1,6 +1,7 @@
 import React from 'react'
 import { Text, TouchableOpacity, StyleSheet } from 'react-native'
 
+// eslint-disable-next-line react/prop-types
 const Button = ({ children, pressed }) => {
 	return (
 		<TouchableOpacity style={styles.button} onPress={pressed}>

@@ -3,9 +3,8 @@ package com.aaltoapp;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
-import com.BV.LinearGradient.LinearGradientPackage;
-import community.revteltech.nfc.NfcManagerPackage;
 import com.amazonaws.RNAWSCognitoPackage;
+import community.revteltech.nfc.NfcManagerPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
@@ -26,9 +25,8 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-            new LinearGradientPackage(),
-            new NfcManagerPackage(),
-            new RNAWSCognitoPackage()
+            new RNAWSCognitoPackage(),
+            new NfcManagerPackage()
       );
     }
 

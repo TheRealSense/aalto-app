@@ -16,13 +16,11 @@ import type { UserResponse, ActivityData } from '../types'
 import PostIcon from '../images/icons/post.png'
 import ReplyIcon from '../images/icons/reply.png'
 
-
 type Props = {|
 	navigation: NavigationScreen
 |}
 
 class HomeScreen extends React.Component<Props> {
-	_navListener: NavigationEventSubscription
 	static navigationOptions = ({ navigation }: Props) => ({
 		title: 'HOME',
 		headerTitleStyle: {
@@ -54,21 +52,23 @@ class HomeScreen extends React.Component<Props> {
 	})
 
 	componentDidMount() {
-		this._navListener = this.props.navigation.addListener(
-			'didFocus',
-			() => {
-				StatusBar.setBarStyle('dark-content')
-			}
-		)
+		const { navigation } = this.props
+		this._navListener = navigation.addListener('didFocus', () => {
+			StatusBar.setBarStyle('dark-content')
+		})
 	}
 
 	_onPressActivity = (activity: ActivityData) => {
-		this.props.navigation.navigate('SinglePost', {
+		const { navigation } = this.props
+		navigation.navigate('SinglePost', {
 			activity: activity
 		})
 	}
 
+	_navListener: NavigationEventSubscription
+
 	render() {
+		const { navigation } = this.props
 		return (
 			<FlatFeed
 				feedGroup="timeline"
@@ -76,7 +76,7 @@ class HomeScreen extends React.Component<Props> {
 					limit: 10
 				}}
 				notify
-				navigation={this.props.navigation}
+				navigation={navigation}
 				Activity={props => (
 					<TouchableOpacity
 						onPress={() => this._onPressActivity(props.activity)}

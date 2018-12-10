@@ -23,6 +23,13 @@ const Icon = ({ name }) => {
 				style={{ width: 25, height: 25 }}
 			/>
 		)
+	} else if (name === 'feed') {
+		return (
+			<Image
+				source={require('../images/icons/newsfeed.png')}
+				style={{ width: 25, height: 25 }}
+			/>
+		)
 	}
 }
 

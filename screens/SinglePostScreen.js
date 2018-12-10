@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-duplicate-props */
 // @flow
 import React from 'react'
 import { SafeAreaView, View, StyleSheet } from 'react-native'
@@ -49,7 +50,7 @@ export default class SinglePostScreen extends React.Component<Props> {
 					activity={activity}
 					feedGroup={feedGroup}
 					userId={userId}
-					navigation={this.props.navigation}
+					navigation={navigation}
 					Activity={props => (
 						<React.Fragment>
 							<Activity

@@ -8,14 +8,16 @@ class SearchBox extends React.Component {
 	}
 
 	_fadeOutPlaceholder = () => {
-		Animated.timing(this.state.fadeAnim, {
+		const { fadeAnim } = this.state
+		Animated.timing(fadeAnim, {
 			toValue: 0,
 			duration: 200
 		}).start()
 	}
 	_fadeInPlaceholder = () => {
-		if (this.state.text === '') {
-			Animated.timing(this.state.fadeAnim, {
+		const { text, fadeAnim } = this.state
+		if (text === '') {
+			Animated.timing(fadeAnim, {
 				toValue: 1,
 				duration: 200
 			}).start()
@@ -23,7 +25,7 @@ class SearchBox extends React.Component {
 	}
 
 	render() {
-		let { fadeAnim } = this.state
+		let { fadeAnim, text } = this.state
 
 		return (
 			<View style={styles.searchbox}>
@@ -40,7 +42,7 @@ class SearchBox extends React.Component {
 					onFocus={this._fadeOutPlaceholder}
 					onBlur={this._fadeInPlaceholder}
 					onChangeText={text => this.setState({ text })}
-					value={this.state.text}
+					value={text}
 					style={styles.textInput}
 					clearButtonMode="while-editing"
 				/>

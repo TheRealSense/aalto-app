@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { Component } from 'react'
 import { Text, View, StyleSheet, Image } from 'react-native'
 
@@ -23,15 +24,18 @@ class SignIn extends Component<{}> {
 
 	signIn() {
 		const { username, password } = this.state
-		this.props.dispatchAuthenticate(username, password)
+		const { dispatchAuthenticate } = this.props
+		dispatchAuthenticate(username, password)
 	}
 
 	confirm() {
 		const { authCode } = this.state
-		this.props.dispatchConfirmUserLogin(authCode)
+		const { dispatchConfirmUserLogin } = this.props
+		dispatchConfirmUserLogin(authCode)
 	}
 
 	render() {
+		// eslint-disable-next-line no-unused-vars
 		const { fontsLoaded } = this.state
 		const {
 			auth: {
@@ -41,6 +45,7 @@ class SignIn extends Component<{}> {
 				showSignInConfirmationModal
 			}
 		} = this.props
+		const { username, password } = this.state
 		return (
 			<View style={styles.container}>
 				<View style={styles.heading}>
@@ -57,13 +62,13 @@ class SignIn extends Component<{}> {
 						placeholder="User Name"
 						type="username"
 						onChangeText={this.onChangeText}
-						value={this.state.username}
+						value={username}
 					/>
 					<Input
 						placeholder="Password"
 						type="password"
 						onChangeText={this.onChangeText}
-						value={this.state.password}
+						value={password}
 						secureTextEntry
 					/>
 				</View>
@@ -71,6 +76,7 @@ class SignIn extends Component<{}> {
 				<Button
 					isLoading={isAuthenticating}
 					title="Sign In"
+					// eslint-disable-next-line react/jsx-no-bind
 					onPress={this.signIn.bind(this)}
 				/>
 				<Text

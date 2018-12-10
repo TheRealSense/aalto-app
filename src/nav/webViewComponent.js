@@ -1,6 +1,7 @@
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react'
 import { WebView } from 'react-native'
+// eslint-disable-next-line import/no-extraneous-dependencies
 import PropTypes from 'prop-types'
 
 class WebViewComponent extends Component {
@@ -8,12 +9,7 @@ class WebViewComponent extends Component {
 		const { navigation } = this.props
 		const { uri } = navigation.state.params
 
-		return (
-			<WebView
-				source={{ uri: uri }}
-				useWebKit
-			/>
-		)
+		return <WebView source={{ uri: uri }} useWebKit />
 	}
 }
 

@@ -31,12 +31,13 @@ class StatusUpdateScreen extends React.Component {
 	})
 
 	render() {
+		const { navigation } = this.props
 		return (
 			<StatusUpdateForm
 				fullscreen
 				{...this.props}
 				registerSubmit={submitFunc => {
-					this.props.navigation.setParams({ submitFunc })
+					navigation.setParams({ submitFunc })
 				}}
 			/>
 		)

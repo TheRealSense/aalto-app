@@ -1,9 +1,12 @@
 //@flow
 import React from 'react'
 import { StatusBar, Image, View } from 'react-native'
-
-import { NotificationFeed } from 'react-native-activity-feed'
-import { Activity, LikeButton, ReactionIcon } from 'react-native-activity-feed'
+import {
+	NotificationFeed,
+	Activity,
+	LikeButton,
+	ReactionIcon
+} from 'react-native-activity-feed'
 import type { NavigationScreen } from 'react-native-activity-feed'
 import type { NavigationEventSubscription } from 'react-navigation'
 import Notification from '../components/Notification'
@@ -13,15 +16,11 @@ import CategoriesIcon from '../images/icons/categories.png'
 import PostIcon from '../images/icons/post.png'
 import ReplyIcon from '../images/icons/reply.png'
 
-
-
 type Props = {|
 	navigation: NavigationScreen
 |}
 
 export default class NotificationScreen extends React.Component<Props> {
-	_navListener: NavigationEventSubscription
-
 	static navigationOptions = () => ({
 		title: 'NOTIFICATIONS',
 		headerLeft: (
@@ -44,13 +43,12 @@ export default class NotificationScreen extends React.Component<Props> {
 	})
 
 	componentDidMount() {
-		this._navListener = this.props.navigation.addListener(
-			'didFocus',
-			() => {
-				StatusBar.setBarStyle('dark-content')
-			}
-		)
+		const { navigation } = this.props
+		this._navListener = navigation.addListener('didFocus', () => {
+			StatusBar.setBarStyle('dark-content')
+		})
 	}
+
 	componentDidUpdate() {}
 
 	_renderGroup = ({ activityGroup, styles, ...props }: any) => {
@@ -97,11 +95,14 @@ export default class NotificationScreen extends React.Component<Props> {
 		}
 	}
 
+	_navListener: NavigationEventSubscription
+
 	render() {
+		const { navigation } = this.props
 		return (
 			<NotificationFeed
 				Group={this._renderGroup}
-				navigation={this.props.navigation}
+				navigation={navigation}
 				notify
 			/>
 		)

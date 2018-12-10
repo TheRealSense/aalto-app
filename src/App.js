@@ -6,7 +6,7 @@ import { connect } from 'react-redux'
 import { Auth } from 'aws-amplify'
 
 import Tabs from './auth/Tabs'
-import Nav from './nav/Nav'
+import Nav from '../Social'
 
 class App extends React.Component {
 	static navigationOptions = {
@@ -37,6 +37,7 @@ class App extends React.Component {
 			this.setState({ user: {} })
 		}
 	}
+
 	render() {
 		const { isLoading, user } = this.state
 

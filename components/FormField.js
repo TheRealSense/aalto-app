@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, TextInput, Text } from 'react-native'
 
+// eslint-disable-next-line react/prop-types
 const FormField = ({ label, value, multiline, onChangeText }) => {
 	return (
 		<View

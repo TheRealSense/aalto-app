@@ -4,10 +4,8 @@ import React from 'react'
 import { View, Text, StyleSheet, StatusBar } from 'react-native'
 import { SafeAreaView } from 'react-navigation'
 
-import { StreamApp } from 'react-native-activity-feed'
-import { Avatar } from 'react-native-activity-feed'
+import { StreamApp, Avatar, AppCtx } from 'react-native-activity-feed'
 import type { FollowCounts } from 'getstream'
-import type { AppCtx } from 'react-native-activity-feed'
 import CoverImage from './CoverImage'
 import Count from './Count'
 import type { UserData } from '../types'
@@ -40,15 +38,17 @@ class ProfileHeaderInner extends React.Component<PropsInner, State> {
 	}
 
 	async componentDidMount() {
-		let data = await this.props.user.profile()
-		this.props.changedUserData()
+		const { user, changedUserData } = this.props
+		let data = await user.profile()
+		changedUserData()
 		this.setState({ user: data })
 	}
 
 	render() {
-		let { following_count, followers_count } = this.state.user
+		const { user, userData } = this.state
+		let { following_count, followers_count } = user
 		let { name, url, desc, profileImage, coverImage } =
-			this.props.userData || {}
+			userData || {}
 
 		coverImage ? StatusBar.setBarStyle('light-content', true) : null
 

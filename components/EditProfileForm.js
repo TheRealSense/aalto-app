@@ -3,8 +3,7 @@
 import React from 'react'
 import { View } from 'react-native'
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
-import { Avatar, UploadImage } from 'react-native-activity-feed'
-import { StreamApp } from 'react-native-activity-feed'
+import { Avatar, UploadImage, StreamApp } from 'react-native-activity-feed'
 import CoverImage from './CoverImage'
 import FormField from './FormField'
 import type { UserData, StreamAppCtx } from '../types'
@@ -32,22 +31,23 @@ class EditProfileFormInner extends React.Component<PropsInner, State> {
 	}
 
 	componentDidMount() {
-		this.props.registerSave(async () => {
-			await this.props.user.update(this.state)
-			this.props.changedUserData()
+		const { registerSave } = this.props
+		registerSave(async () => {
+			const { user, changedUserData } = this.props
+			await user.update(this.state)
+			changedUserData()
 		})
 	}
 
-	_onUploadButtonPress() {
-		console.log('onUploadButtonPress')
-	}
+	_onUploadButtonPress() {}
 
 	render() {
+		const { name, url, desc, coverImage, profileImage } = this.state
 		return (
 			<KeyboardAwareScrollView
 				style={{ flex: 1, backgroundColor: '#ffffff' }}
 			>
-				<CoverImage source={this.state.coverImage} size={150} />
+				<CoverImage source={coverImage} size={150} />
 				<View
 					style={{
 						flexDirection: 'row',
@@ -66,7 +66,7 @@ class EditProfileFormInner extends React.Component<PropsInner, State> {
 						}}
 					>
 						<Avatar
-							source={this.state.profileImage}
+							source={profileImage}
 							size={100}
 							editButton
 							onUploadButtonPress={this._onUploadButtonPress}
@@ -78,17 +78,17 @@ class EditProfileFormInner extends React.Component<PropsInner, State> {
 				</View>
 				<View style={{ padding: 15 }}>
 					<FormField
-						value={this.state.name}
+						value={name}
 						label="Name"
 						onChangeText={text => this.setState({ name: text })}
 					/>
 					<FormField
-						value={this.state.url}
+						value={url}
 						label="Website"
 						onChangeText={text => this.setState({ url: text })}
 					/>
 					<FormField
-						value={this.state.desc}
+						value={desc}
 						label="Description"
 						onChangeText={text => this.setState({ desc: text })}
 						multiline

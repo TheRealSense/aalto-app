@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 
+// eslint-disable-next-line react/prop-types
 const LargeHeading = ({ children }) => {
 	return (
 		<View style={styles.container}>

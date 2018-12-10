@@ -13,7 +13,6 @@ type Props = {|
 |}
 
 export default class ProfileScreen extends React.Component<Props> {
-	_navListener: NavigationEventSubscription
 	static navigationOptions = ({ navigation }: Props) => ({
 		headerStyle: {
 			backgroundColor: 'transparent',
@@ -29,13 +28,13 @@ export default class ProfileScreen extends React.Component<Props> {
 	})
 
 	componentDidMount() {
-		this._navListener = this.props.navigation.addListener(
-			'didFocus',
-			() => {
-				StatusBar.setBarStyle('light-content')
-			}
-		)
+		const { navigation } = this.props
+		this._navListener = navigation.addListener('didFocus', () => {
+			StatusBar.setBarStyle('light-content')
+		})
 	}
+
+	_navListener: NavigationEventSubscription
 
 	render() {
 		return (

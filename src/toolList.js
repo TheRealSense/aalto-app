@@ -237,7 +237,7 @@ const tools = {
 			{
 				desc: 'User Manual (FI)',
 				url:
-					'http://www.husqvarnaviking.com/getattachment/Machines/EMERALD-trade;-118/Emerald_116_118_122_manual_FI.pdf.aspx'
+					'http://www.husqvarnaviking.com/getattachment/Machines/EMERALD-trade-118/Emerald_116_118_122_manual_FI.pdf.aspx'
 			}
 		]
 	},

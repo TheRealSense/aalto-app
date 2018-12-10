@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -13,9 +12,6 @@
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
 		00E356F31AD99517003FC87E /* AaltoAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* AaltoAppTests.m */; };
-		046270884D604B838CF96227 /* Raleway-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD4FFE70DE694BFCA59531EB /* Raleway-LightItalic.ttf */; };
-		0BEC7AC62EE948C2A76DE4F8 /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BD271B2BDA447B69A0D07E2 /* Raleway-Thin.ttf */; };
-		0D6B7F9932494208B11FFD8D /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3737A1E71D074D898BDE3040 /* Lato-Black.ttf */; };
 		11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
@@ -26,9 +22,6 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
-		16AEB662C1474B09A9598BC9 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D731BB6BB3A469C9F5BFC0E /* Raleway-Bold.ttf */; };
-		1F537C846C7040E08DBDD37A /* Lato-Hairline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E5D0844333A4389A7EEB9C1 /* Lato-Hairline.ttf */; };
-		25B0E95F1C374F5A85AB37F9 /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC5E454C64445B6B11F1604 /* libBVLinearGradient.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -39,36 +32,41 @@
 		2D02E4C61E0B4AEC006451C7 /* libRCTSettings-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E901DF850E9000B6D8A /* libRCTSettings-tvOS.a */; };
 		2D02E4C71E0B4AEC006451C7 /* libRCTText-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E941DF850E9000B6D8A /* libRCTText-tvOS.a */; };
 		2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */; };
-		2D0D320830F045E280EE5088 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D130AC4FDDC4CC581F8855B /* Lato-Regular.ttf */; };
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* AaltoAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* AaltoAppTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
-		46967599D3D84890A0FF603D /* Raleway-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5DDF02B3EE6480B88205DB9 /* Raleway-ExtraLight.ttf */; };
-		46A6DB7E26044661BF21DEFF /* Raleway-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E75D981B08544C4B2D9ADE2 /* Raleway-SemiBoldItalic.ttf */; };
-		48658E8829F84416B2D76E15 /* libNfcManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A357A07D8CA4CF2BE8DBD06 /* libNfcManager.a */; };
-		48E961A5B61946CFA0FC60EB /* libRNAWSCognito.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99FFEFABE8B04AE5A5F57A46 /* libRNAWSCognito.a */; };
-		4D22F48EF83E472EA06BD560 /* Raleway-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E43F4A2B9E714B699522B460 /* Raleway-ExtraBold.ttf */; };
-		5243526C81524ACF9B2AA1AD /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89E2328D6E6D41C38E19CC11 /* Raleway-SemiBold.ttf */; };
-		52D3BE0A45CF411C9AA1D557 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1D9141AEF01459B8529BB90 /* Lato-LightItalic.ttf */; };
-		5A5EB9780BD7446B85C1527F /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A3BFBA75DAB45A58A92FBD4 /* Raleway-Medium.ttf */; };
-		6F5B5D87C001496D8364E62F /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 707FBD3F4BFB4559ADCA2507 /* Raleway-Regular.ttf */; };
-		72475FD0FD70449C87C96483 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0BFF4623B384D338D6A4C5D /* Lato-BlackItalic.ttf */; };
-		72F5800C713345A28765F9B1 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 015B1F3CF85946D28E11109B /* Lato-Italic.ttf */; };
-		74F0E72DA65F412BAB383995 /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4039B49918854785B7AE4C59 /* Raleway-Black.ttf */; };
-		77D7524C0BF14029917814B2 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B2DBD325D36455C831DA3F4 /* Lato-Bold.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		931EB2B189614EEDA1A50976 /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8733C4712BF47A880FDD1F1 /* Raleway-Italic.ttf */; };
-		9F37193189914C7A9597929C /* Raleway-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6ACF70EA867470B9BCDBF40 /* Raleway-BoldItalic.ttf */; };
-		A801EC6786694106B8A5F7D1 /* Raleway-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FABDBE382CE44903A72F8BD9 /* Raleway-ExtraLightItalic.ttf */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		B0954FA9B7C84A7993B3B4B0 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52E8F364280C4E1DB0E9A5C3 /* Raleway-Light.ttf */; };
-		B179747FACDD44B8BCB33C06 /* Raleway-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E76FD1E51DE54BF391C7000A /* Raleway-ExtraBoldItalic.ttf */; };
-		BCF6E6C915D14CC29328A79D /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC451E990CEA4F129A7CE887 /* Lato-Light.ttf */; };
-		BE85139D21444C8199679BE4 /* Raleway-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B578EA4AEDB4BDFB19F9591 /* Raleway-ThinItalic.ttf */; };
-		CF1A37E4551E45369DC642B8 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 90877A8A0A4340619B34CAB0 /* Lato-BoldItalic.ttf */; };
-		DE49C5DC7B9D4A3DA8DBA11A /* Lato-HairlineItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 678ECC6545F54C59AF71E228 /* Lato-HairlineItalic.ttf */; };
-		EF12B2726DEB4669B17BD838 /* Raleway-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF00BBD80D62412DACB1D881 /* Raleway-BlackItalic.ttf */; };
-		EFEEA775C2D64ECABC0F29E6 /* Raleway-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD3A2188AD72427091202E43 /* Raleway-MediumItalic.ttf */; };
+		1D80BF7D17474DF1936C97D6 /* libNfcManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE334ABFD244FBF914CF464 /* libNfcManager.a */; };
+		88FA7D91F3324BF098F0355A /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E9670C8967F49A4BA10FAD2 /* Lato-Black.ttf */; };
+		C91A73DB4699464083C1C657 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE0D17996BE446998D4FCBBE /* Lato-BlackItalic.ttf */; };
+		BC25645A03424B8EB315C35A /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 704D6583D8864C819840CFB2 /* Lato-Bold.ttf */; };
+		172AE77A32B04AC4A53A1989 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D48D5DEE957B468588A37C48 /* Lato-BoldItalic.ttf */; };
+		3BCCA0DEC07349C2A3EFF771 /* Lato-Hairline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A7BF192FFD447389CB19D0C /* Lato-Hairline.ttf */; };
+		A382C85BB1F94D65B4188101 /* Lato-HairlineItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0437DCC0832D43CDA7CBE3EE /* Lato-HairlineItalic.ttf */; };
+		82895DD3C8E44AF09F959B27 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1700F93255146E6B95A04A3 /* Lato-Italic.ttf */; };
+		D649F7D0A60D4A89B04CC7C1 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 90765A87471944E7BCBA9474 /* Lato-Light.ttf */; };
+		12F48EE8FB9442FCB4AB9D70 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9214605A95334E3DA5FBDD93 /* Lato-LightItalic.ttf */; };
+		82ABD2DA466C4D4194DD9857 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E253C4C13BB142728D07D93E /* Lato-Regular.ttf */; };
+		3548FDF5310B43D6872BD25D /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9D8ECB593CF34066AF0BFDF8 /* Raleway-Black.ttf */; };
+		DF9965AE65E3430AAE628CD2 /* Raleway-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18A5582430DE407F80E88528 /* Raleway-BlackItalic.ttf */; };
+		BFE3743B8D9D4EE8B1663C34 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B41FDD23D364AC3B652B0E0 /* Raleway-Bold.ttf */; };
+		EB7A9088F6144D7E82D97041 /* Raleway-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8CF517C65774704BE5D6802 /* Raleway-BoldItalic.ttf */; };
+		A742E87C2A914A409A8D72E4 /* Raleway-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A07BD429C174EEE85E3055C /* Raleway-ExtraBold.ttf */; };
+		7426A7854FA34138A1ADE536 /* Raleway-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7A4C4BEEAEB4AA681FF62DA /* Raleway-ExtraBoldItalic.ttf */; };
+		D435D17387174BDBABA52D8E /* Raleway-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5F1BFE22B3E4CE9955927D2 /* Raleway-ExtraLight.ttf */; };
+		08ED33369B0F43F5BF6C43F3 /* Raleway-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACBE91A2D4F2410792C5EF87 /* Raleway-ExtraLightItalic.ttf */; };
+		05D52DCF72FB494C9F7EA9EA /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1BAE838F5BC4360B1F496D1 /* Raleway-Italic.ttf */; };
+		C0CD6661D653433BB84D8D90 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB4FE1FC9CF44A0C8C3D3118 /* Raleway-Light.ttf */; };
+		180621A6C0BC42E0AA7C0447 /* Raleway-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AA8A25831234E47B422997A /* Raleway-LightItalic.ttf */; };
+		1B1B4515A30C43E2A2E5627E /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F06047A1A3542B095EB417E /* Raleway-Medium.ttf */; };
+		84FFA1F9BBCC4946A8233C8F /* Raleway-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 265BB7C9C9FF4B19A86A662D /* Raleway-MediumItalic.ttf */; };
+		22181B51C22E467E890AB8BF /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BE89546C55D4FFD84B7D851 /* Raleway-Regular.ttf */; };
+		8D9F633B245D48EBBD2D6AB6 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB34F222670446A8AFA5FC78 /* Raleway-SemiBold.ttf */; };
+		32B23B7F2398404D93B93885 /* Raleway-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C1EF73027F943659F0FFE8F /* Raleway-SemiBoldItalic.ttf */; };
+		92F1FC64BAB34E109F078352 /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70EEB2CCDD7C4F84A450FB87 /* Raleway-Thin.ttf */; };
+		579B29B293BD436892E1CF86 /* Raleway-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67DC9BC18CA84A81AD27F05C /* Raleway-ThinItalic.ttf */; };
+		BA8F4CCCE4214130AC2F0179 /* libRNAWSCognito.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 910B64CF5E3E4B5DA359B542 /* libRNAWSCognito.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -219,34 +217,6 @@
 			remoteGlobalIDString = 9936F32F1F5F2E5B0010BF04;
 			remoteInfo = "privatedata-tvOS";
 		};
-		3539190121BA4A0700B1A937 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F9668CF08E4F4831AEBCE44D /* RNAWSCognito.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 134814201AA4EA6300B7C361;
-			remoteInfo = RNAWSCognito;
-		};
-		35595D0021BD5B9B00A14263 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1F39BC2E3DA46EB9182435A /* BVLinearGradient.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 134814201AA4EA6300B7C361;
-			remoteInfo = BVLinearGradient;
-		};
-		35595D0221BD5B9B00A14263 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1F39BC2E3DA46EB9182435A /* BVLinearGradient.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 64AA15081EF7F30100718508;
-			remoteInfo = "BVLinearGradient-tvOS";
-		};
-		35595D2D21BD5B9C00A14263 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F01C65E56BBC4E7A846BBA06 /* NfcManager.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 134814201AA4EA6300B7C361;
-			remoteInfo = NfcManager;
-		};
 		3DAD3E831DF850E9000B6D8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */;
@@ -385,9 +355,6 @@
 		00E356EE1AD99517003FC87E /* AaltoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AaltoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* AaltoAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AaltoAppTests.m; sourceTree = "<group>"; };
-		015B1F3CF85946D28E11109B /* Lato-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Italic.ttf"; path = "../src/assets/fonts/Lato-Italic.ttf"; sourceTree = "<group>"; };
-		0A3BFBA75DAB45A58A92FBD4 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Medium.ttf"; path = "../src/assets/fonts/Raleway-Medium.ttf"; sourceTree = "<group>"; };
-		0B2DBD325D36455C831DA3F4 /* Lato-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Bold.ttf"; path = "../src/assets/fonts/Lato-Bold.ttf"; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* AaltoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AaltoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -398,44 +365,45 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AaltoApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = AaltoApp/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		1D130AC4FDDC4CC581F8855B /* Lato-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Regular.ttf"; path = "../src/assets/fonts/Lato-Regular.ttf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* AaltoApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AaltoApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* AaltoApp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AaltoApp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3737A1E71D074D898BDE3040 /* Lato-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Black.ttf"; path = "../src/assets/fonts/Lato-Black.ttf"; sourceTree = "<group>"; };
-		3D731BB6BB3A469C9F5BFC0E /* Raleway-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Bold.ttf"; path = "../src/assets/fonts/Raleway-Bold.ttf"; sourceTree = "<group>"; };
-		4039B49918854785B7AE4C59 /* Raleway-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Black.ttf"; path = "../src/assets/fonts/Raleway-Black.ttf"; sourceTree = "<group>"; };
-		4E75D981B08544C4B2D9ADE2 /* Raleway-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-SemiBoldItalic.ttf"; path = "../src/assets/fonts/Raleway-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
-		52E8F364280C4E1DB0E9A5C3 /* Raleway-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Light.ttf"; path = "../src/assets/fonts/Raleway-Light.ttf"; sourceTree = "<group>"; };
-		5A357A07D8CA4CF2BE8DBD06 /* libNfcManager.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libNfcManager.a; sourceTree = "<group>"; };
-		5B578EA4AEDB4BDFB19F9591 /* Raleway-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ThinItalic.ttf"; path = "../src/assets/fonts/Raleway-ThinItalic.ttf"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
-		678ECC6545F54C59AF71E228 /* Lato-HairlineItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-HairlineItalic.ttf"; path = "../src/assets/fonts/Lato-HairlineItalic.ttf"; sourceTree = "<group>"; };
-		707FBD3F4BFB4559ADCA2507 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Regular.ttf"; path = "../src/assets/fonts/Raleway-Regular.ttf"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		89E2328D6E6D41C38E19CC11 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-SemiBold.ttf"; path = "../src/assets/fonts/Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
-		8BD271B2BDA447B69A0D07E2 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Thin.ttf"; path = "../src/assets/fonts/Raleway-Thin.ttf"; sourceTree = "<group>"; };
-		8E5D0844333A4389A7EEB9C1 /* Lato-Hairline.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Hairline.ttf"; path = "../src/assets/fonts/Lato-Hairline.ttf"; sourceTree = "<group>"; };
-		90877A8A0A4340619B34CAB0 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-BoldItalic.ttf"; path = "../src/assets/fonts/Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
-		99FFEFABE8B04AE5A5F57A46 /* libRNAWSCognito.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNAWSCognito.a; sourceTree = "<group>"; };
-		9CC5E454C64445B6B11F1604 /* libBVLinearGradient.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libBVLinearGradient.a; sourceTree = "<group>"; };
-		A1F39BC2E3DA46EB9182435A /* BVLinearGradient.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = BVLinearGradient.xcodeproj; path = "../node_modules/react-native-linear-gradient/BVLinearGradient.xcodeproj"; sourceTree = "<group>"; };
-		A5DDF02B3EE6480B88205DB9 /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraLight.ttf"; path = "../src/assets/fonts/Raleway-ExtraLight.ttf"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
-		B1D9141AEF01459B8529BB90 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-LightItalic.ttf"; path = "../src/assets/fonts/Lato-LightItalic.ttf"; sourceTree = "<group>"; };
-		B6ACF70EA867470B9BCDBF40 /* Raleway-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-BoldItalic.ttf"; path = "../src/assets/fonts/Raleway-BoldItalic.ttf"; sourceTree = "<group>"; };
-		CD3A2188AD72427091202E43 /* Raleway-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-MediumItalic.ttf"; path = "../src/assets/fonts/Raleway-MediumItalic.ttf"; sourceTree = "<group>"; };
-		CF00BBD80D62412DACB1D881 /* Raleway-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-BlackItalic.ttf"; path = "../src/assets/fonts/Raleway-BlackItalic.ttf"; sourceTree = "<group>"; };
-		D0BFF4623B384D338D6A4C5D /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-BlackItalic.ttf"; path = "../src/assets/fonts/Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
-		E43F4A2B9E714B699522B460 /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraBold.ttf"; path = "../src/assets/fonts/Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
-		E76FD1E51DE54BF391C7000A /* Raleway-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraBoldItalic.ttf"; path = "../src/assets/fonts/Raleway-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
-		EC451E990CEA4F129A7CE887 /* Lato-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Light.ttf"; path = "../src/assets/fonts/Lato-Light.ttf"; sourceTree = "<group>"; };
-		F01C65E56BBC4E7A846BBA06 /* NfcManager.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = NfcManager.xcodeproj; path = "../node_modules/react-native-nfc-manager/ios/NfcManager.xcodeproj"; sourceTree = "<group>"; };
-		F8733C4712BF47A880FDD1F1 /* Raleway-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Italic.ttf"; path = "../src/assets/fonts/Raleway-Italic.ttf"; sourceTree = "<group>"; };
-		F9668CF08E4F4831AEBCE44D /* RNAWSCognito.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNAWSCognito.xcodeproj; path = "../node_modules/amazon-cognito-identity-js/ios/RNAWSCognito.xcodeproj"; sourceTree = "<group>"; };
-		FABDBE382CE44903A72F8BD9 /* Raleway-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraLightItalic.ttf"; path = "../src/assets/fonts/Raleway-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
-		FD4FFE70DE694BFCA59531EB /* Raleway-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-LightItalic.ttf"; path = "../src/assets/fonts/Raleway-LightItalic.ttf"; sourceTree = "<group>"; };
+		785E0EC8EB3A487A956102FC /* NfcManager.xcodeproj */ = {isa = PBXFileReference; name = "NfcManager.xcodeproj"; path = "../node_modules/react-native-nfc-manager/ios/NfcManager.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		8DE334ABFD244FBF914CF464 /* libNfcManager.a */ = {isa = PBXFileReference; name = "libNfcManager.a"; path = "libNfcManager.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		9E9670C8967F49A4BA10FAD2 /* Lato-Black.ttf */ = {isa = PBXFileReference; name = "Lato-Black.ttf"; path = "../src/assets/fonts/Lato-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FE0D17996BE446998D4FCBBE /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Lato-BlackItalic.ttf"; path = "../src/assets/fonts/Lato-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		704D6583D8864C819840CFB2 /* Lato-Bold.ttf */ = {isa = PBXFileReference; name = "Lato-Bold.ttf"; path = "../src/assets/fonts/Lato-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D48D5DEE957B468588A37C48 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Lato-BoldItalic.ttf"; path = "../src/assets/fonts/Lato-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3A7BF192FFD447389CB19D0C /* Lato-Hairline.ttf */ = {isa = PBXFileReference; name = "Lato-Hairline.ttf"; path = "../src/assets/fonts/Lato-Hairline.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0437DCC0832D43CDA7CBE3EE /* Lato-HairlineItalic.ttf */ = {isa = PBXFileReference; name = "Lato-HairlineItalic.ttf"; path = "../src/assets/fonts/Lato-HairlineItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C1700F93255146E6B95A04A3 /* Lato-Italic.ttf */ = {isa = PBXFileReference; name = "Lato-Italic.ttf"; path = "../src/assets/fonts/Lato-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		90765A87471944E7BCBA9474 /* Lato-Light.ttf */ = {isa = PBXFileReference; name = "Lato-Light.ttf"; path = "../src/assets/fonts/Lato-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9214605A95334E3DA5FBDD93 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; name = "Lato-LightItalic.ttf"; path = "../src/assets/fonts/Lato-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E253C4C13BB142728D07D93E /* Lato-Regular.ttf */ = {isa = PBXFileReference; name = "Lato-Regular.ttf"; path = "../src/assets/fonts/Lato-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9D8ECB593CF34066AF0BFDF8 /* Raleway-Black.ttf */ = {isa = PBXFileReference; name = "Raleway-Black.ttf"; path = "../src/assets/fonts/Raleway-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		18A5582430DE407F80E88528 /* Raleway-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Raleway-BlackItalic.ttf"; path = "../src/assets/fonts/Raleway-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2B41FDD23D364AC3B652B0E0 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; name = "Raleway-Bold.ttf"; path = "../src/assets/fonts/Raleway-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E8CF517C65774704BE5D6802 /* Raleway-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Raleway-BoldItalic.ttf"; path = "../src/assets/fonts/Raleway-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2A07BD429C174EEE85E3055C /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Raleway-ExtraBold.ttf"; path = "../src/assets/fonts/Raleway-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E7A4C4BEEAEB4AA681FF62DA /* Raleway-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; name = "Raleway-ExtraBoldItalic.ttf"; path = "../src/assets/fonts/Raleway-ExtraBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D5F1BFE22B3E4CE9955927D2 /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Raleway-ExtraLight.ttf"; path = "../src/assets/fonts/Raleway-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		ACBE91A2D4F2410792C5EF87 /* Raleway-ExtraLightItalic.ttf */ = {isa = PBXFileReference; name = "Raleway-ExtraLightItalic.ttf"; path = "../src/assets/fonts/Raleway-ExtraLightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D1BAE838F5BC4360B1F496D1 /* Raleway-Italic.ttf */ = {isa = PBXFileReference; name = "Raleway-Italic.ttf"; path = "../src/assets/fonts/Raleway-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CB4FE1FC9CF44A0C8C3D3118 /* Raleway-Light.ttf */ = {isa = PBXFileReference; name = "Raleway-Light.ttf"; path = "../src/assets/fonts/Raleway-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0AA8A25831234E47B422997A /* Raleway-LightItalic.ttf */ = {isa = PBXFileReference; name = "Raleway-LightItalic.ttf"; path = "../src/assets/fonts/Raleway-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2F06047A1A3542B095EB417E /* Raleway-Medium.ttf */ = {isa = PBXFileReference; name = "Raleway-Medium.ttf"; path = "../src/assets/fonts/Raleway-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		265BB7C9C9FF4B19A86A662D /* Raleway-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Raleway-MediumItalic.ttf"; path = "../src/assets/fonts/Raleway-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8BE89546C55D4FFD84B7D851 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; name = "Raleway-Regular.ttf"; path = "../src/assets/fonts/Raleway-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FB34F222670446A8AFA5FC78 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; name = "Raleway-SemiBold.ttf"; path = "../src/assets/fonts/Raleway-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1C1EF73027F943659F0FFE8F /* Raleway-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "Raleway-SemiBoldItalic.ttf"; path = "../src/assets/fonts/Raleway-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		70EEB2CCDD7C4F84A450FB87 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; name = "Raleway-Thin.ttf"; path = "../src/assets/fonts/Raleway-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		67DC9BC18CA84A81AD27F05C /* Raleway-ThinItalic.ttf */ = {isa = PBXFileReference; name = "Raleway-ThinItalic.ttf"; path = "../src/assets/fonts/Raleway-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A9795D32A4EC4C4989F90667 /* RNAWSCognito.xcodeproj */ = {isa = PBXFileReference; name = "RNAWSCognito.xcodeproj"; path = "../node_modules/amazon-cognito-identity-js/ios/RNAWSCognito.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		910B64CF5E3E4B5DA359B542 /* libRNAWSCognito.a */ = {isa = PBXFileReference; name = "libRNAWSCognito.a"; path = "libRNAWSCognito.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -463,9 +431,8 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
-				48E961A5B61946CFA0FC60EB /* libRNAWSCognito.a in Frameworks */,
-				48658E8829F84416B2D76E15 /* libNfcManager.a in Frameworks */,
-				25B0E95F1C374F5A85AB37F9 /* libBVLinearGradient.a in Frameworks */,
+				1D80BF7D17474DF1936C97D6 /* libNfcManager.a in Frameworks */,
+				BA8F4CCCE4214130AC2F0179 /* libRNAWSCognito.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,76 +586,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		353918D821BA4A0000B1A937 /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				99FFEFABE8B04AE5A5F57A46 /* libRNAWSCognito.a */,
-				5A357A07D8CA4CF2BE8DBD06 /* libNfcManager.a */,
-				9CC5E454C64445B6B11F1604 /* libBVLinearGradient.a */,
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
-		353918FE21BA4A0700B1A937 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3539190221BA4A0700B1A937 /* libRNAWSCognito.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		35595CFC21BD5B9B00A14263 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				35595D0121BD5B9B00A14263 /* libBVLinearGradient.a */,
-				35595D0321BD5B9B00A14263 /* libBVLinearGradient.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		35595D2A21BD5B9C00A14263 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				35595D2E21BD5B9C00A14263 /* libNfcManager.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		4F53F3FEF02E411D8D7DD0ED /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				3737A1E71D074D898BDE3040 /* Lato-Black.ttf */,
-				D0BFF4623B384D338D6A4C5D /* Lato-BlackItalic.ttf */,
-				0B2DBD325D36455C831DA3F4 /* Lato-Bold.ttf */,
-				90877A8A0A4340619B34CAB0 /* Lato-BoldItalic.ttf */,
-				8E5D0844333A4389A7EEB9C1 /* Lato-Hairline.ttf */,
-				678ECC6545F54C59AF71E228 /* Lato-HairlineItalic.ttf */,
-				015B1F3CF85946D28E11109B /* Lato-Italic.ttf */,
-				EC451E990CEA4F129A7CE887 /* Lato-Light.ttf */,
-				B1D9141AEF01459B8529BB90 /* Lato-LightItalic.ttf */,
-				1D130AC4FDDC4CC581F8855B /* Lato-Regular.ttf */,
-				4039B49918854785B7AE4C59 /* Raleway-Black.ttf */,
-				CF00BBD80D62412DACB1D881 /* Raleway-BlackItalic.ttf */,
-				3D731BB6BB3A469C9F5BFC0E /* Raleway-Bold.ttf */,
-				B6ACF70EA867470B9BCDBF40 /* Raleway-BoldItalic.ttf */,
-				E43F4A2B9E714B699522B460 /* Raleway-ExtraBold.ttf */,
-				E76FD1E51DE54BF391C7000A /* Raleway-ExtraBoldItalic.ttf */,
-				A5DDF02B3EE6480B88205DB9 /* Raleway-ExtraLight.ttf */,
-				FABDBE382CE44903A72F8BD9 /* Raleway-ExtraLightItalic.ttf */,
-				F8733C4712BF47A880FDD1F1 /* Raleway-Italic.ttf */,
-				52E8F364280C4E1DB0E9A5C3 /* Raleway-Light.ttf */,
-				FD4FFE70DE694BFCA59531EB /* Raleway-LightItalic.ttf */,
-				0A3BFBA75DAB45A58A92FBD4 /* Raleway-Medium.ttf */,
-				CD3A2188AD72427091202E43 /* Raleway-MediumItalic.ttf */,
-				707FBD3F4BFB4559ADCA2507 /* Raleway-Regular.ttf */,
-				89E2328D6E6D41C38E19CC11 /* Raleway-SemiBold.ttf */,
-				4E75D981B08544C4B2D9ADE2 /* Raleway-SemiBoldItalic.ttf */,
-				8BD271B2BDA447B69A0D07E2 /* Raleway-Thin.ttf */,
-				5B578EA4AEDB4BDFB19F9591 /* Raleway-ThinItalic.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -722,9 +619,8 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
-				F9668CF08E4F4831AEBCE44D /* RNAWSCognito.xcodeproj */,
-				F01C65E56BBC4E7A846BBA06 /* NfcManager.xcodeproj */,
-				A1F39BC2E3DA46EB9182435A /* BVLinearGradient.xcodeproj */,
+				785E0EC8EB3A487A956102FC /* NfcManager.xcodeproj */,
+				A9795D32A4EC4C4989F90667 /* RNAWSCognito.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -746,8 +642,7 @@
 				00E356EF1AD99517003FC87E /* AaltoAppTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				4F53F3FEF02E411D8D7DD0ED /* Resources */,
-				353918D821BA4A0000B1A937 /* Recovered References */,
+				5C869FF0EF124E3ABD0ED1B9 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -773,6 +668,42 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		5C869FF0EF124E3ABD0ED1B9 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				9E9670C8967F49A4BA10FAD2 /* Lato-Black.ttf */,
+				FE0D17996BE446998D4FCBBE /* Lato-BlackItalic.ttf */,
+				704D6583D8864C819840CFB2 /* Lato-Bold.ttf */,
+				D48D5DEE957B468588A37C48 /* Lato-BoldItalic.ttf */,
+				3A7BF192FFD447389CB19D0C /* Lato-Hairline.ttf */,
+				0437DCC0832D43CDA7CBE3EE /* Lato-HairlineItalic.ttf */,
+				C1700F93255146E6B95A04A3 /* Lato-Italic.ttf */,
+				90765A87471944E7BCBA9474 /* Lato-Light.ttf */,
+				9214605A95334E3DA5FBDD93 /* Lato-LightItalic.ttf */,
+				E253C4C13BB142728D07D93E /* Lato-Regular.ttf */,
+				9D8ECB593CF34066AF0BFDF8 /* Raleway-Black.ttf */,
+				18A5582430DE407F80E88528 /* Raleway-BlackItalic.ttf */,
+				2B41FDD23D364AC3B652B0E0 /* Raleway-Bold.ttf */,
+				E8CF517C65774704BE5D6802 /* Raleway-BoldItalic.ttf */,
+				2A07BD429C174EEE85E3055C /* Raleway-ExtraBold.ttf */,
+				E7A4C4BEEAEB4AA681FF62DA /* Raleway-ExtraBoldItalic.ttf */,
+				D5F1BFE22B3E4CE9955927D2 /* Raleway-ExtraLight.ttf */,
+				ACBE91A2D4F2410792C5EF87 /* Raleway-ExtraLightItalic.ttf */,
+				D1BAE838F5BC4360B1F496D1 /* Raleway-Italic.ttf */,
+				CB4FE1FC9CF44A0C8C3D3118 /* Raleway-Light.ttf */,
+				0AA8A25831234E47B422997A /* Raleway-LightItalic.ttf */,
+				2F06047A1A3542B095EB417E /* Raleway-Medium.ttf */,
+				265BB7C9C9FF4B19A86A662D /* Raleway-MediumItalic.ttf */,
+				8BE89546C55D4FFD84B7D851 /* Raleway-Regular.ttf */,
+				FB34F222670446A8AFA5FC78 /* Raleway-SemiBold.ttf */,
+				1C1EF73027F943659F0FFE8F /* Raleway-SemiBoldItalic.ttf */,
+				70EEB2CCDD7C4F84A450FB87 /* Raleway-Thin.ttf */,
+				67DC9BC18CA84A81AD27F05C /* Raleway-ThinItalic.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -862,9 +793,6 @@
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
-					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = B57R8WBK6A;
-					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -888,14 +816,6 @@
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
-				{
-					ProductGroup = 35595CFC21BD5B9B00A14263 /* Products */;
-					ProjectRef = A1F39BC2E3DA46EB9182435A /* BVLinearGradient.xcodeproj */;
-				},
-				{
-					ProductGroup = 35595D2A21BD5B9C00A14263 /* Products */;
-					ProjectRef = F01C65E56BBC4E7A846BBA06 /* NfcManager.xcodeproj */;
-				},
 				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
@@ -943,10 +863,6 @@
 				{
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
-				},
-				{
-					ProductGroup = 353918FE21BA4A0700B1A937 /* Products */;
-					ProjectRef = F9668CF08E4F4831AEBCE44D /* RNAWSCognito.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1093,34 +1009,6 @@
 			remoteRef = 2DF0FFEC2056DD460020B375 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3539190221BA4A0700B1A937 /* libRNAWSCognito.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libRNAWSCognito.a;
-			remoteRef = 3539190121BA4A0700B1A937 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		35595D0121BD5B9B00A14263 /* libBVLinearGradient.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libBVLinearGradient.a;
-			remoteRef = 35595D0021BD5B9B00A14263 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		35595D0321BD5B9B00A14263 /* libBVLinearGradient.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libBVLinearGradient.a;
-			remoteRef = 35595D0221BD5B9B00A14263 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		35595D2E21BD5B9C00A14263 /* libNfcManager.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libNfcManager.a;
-			remoteRef = 35595D2D21BD5B9C00A14263 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		3DAD3E841DF850E9000B6D8A /* libRCTImage-tvOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1263,34 +1151,34 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				0D6B7F9932494208B11FFD8D /* Lato-Black.ttf in Resources */,
-				72475FD0FD70449C87C96483 /* Lato-BlackItalic.ttf in Resources */,
-				77D7524C0BF14029917814B2 /* Lato-Bold.ttf in Resources */,
-				CF1A37E4551E45369DC642B8 /* Lato-BoldItalic.ttf in Resources */,
-				1F537C846C7040E08DBDD37A /* Lato-Hairline.ttf in Resources */,
-				DE49C5DC7B9D4A3DA8DBA11A /* Lato-HairlineItalic.ttf in Resources */,
-				72F5800C713345A28765F9B1 /* Lato-Italic.ttf in Resources */,
-				BCF6E6C915D14CC29328A79D /* Lato-Light.ttf in Resources */,
-				52D3BE0A45CF411C9AA1D557 /* Lato-LightItalic.ttf in Resources */,
-				2D0D320830F045E280EE5088 /* Lato-Regular.ttf in Resources */,
-				74F0E72DA65F412BAB383995 /* Raleway-Black.ttf in Resources */,
-				EF12B2726DEB4669B17BD838 /* Raleway-BlackItalic.ttf in Resources */,
-				16AEB662C1474B09A9598BC9 /* Raleway-Bold.ttf in Resources */,
-				9F37193189914C7A9597929C /* Raleway-BoldItalic.ttf in Resources */,
-				4D22F48EF83E472EA06BD560 /* Raleway-ExtraBold.ttf in Resources */,
-				B179747FACDD44B8BCB33C06 /* Raleway-ExtraBoldItalic.ttf in Resources */,
-				46967599D3D84890A0FF603D /* Raleway-ExtraLight.ttf in Resources */,
-				A801EC6786694106B8A5F7D1 /* Raleway-ExtraLightItalic.ttf in Resources */,
-				931EB2B189614EEDA1A50976 /* Raleway-Italic.ttf in Resources */,
-				B0954FA9B7C84A7993B3B4B0 /* Raleway-Light.ttf in Resources */,
-				046270884D604B838CF96227 /* Raleway-LightItalic.ttf in Resources */,
-				5A5EB9780BD7446B85C1527F /* Raleway-Medium.ttf in Resources */,
-				EFEEA775C2D64ECABC0F29E6 /* Raleway-MediumItalic.ttf in Resources */,
-				6F5B5D87C001496D8364E62F /* Raleway-Regular.ttf in Resources */,
-				5243526C81524ACF9B2AA1AD /* Raleway-SemiBold.ttf in Resources */,
-				46A6DB7E26044661BF21DEFF /* Raleway-SemiBoldItalic.ttf in Resources */,
-				0BEC7AC62EE948C2A76DE4F8 /* Raleway-Thin.ttf in Resources */,
-				BE85139D21444C8199679BE4 /* Raleway-ThinItalic.ttf in Resources */,
+				88FA7D91F3324BF098F0355A /* Lato-Black.ttf in Resources */,
+				C91A73DB4699464083C1C657 /* Lato-BlackItalic.ttf in Resources */,
+				BC25645A03424B8EB315C35A /* Lato-Bold.ttf in Resources */,
+				172AE77A32B04AC4A53A1989 /* Lato-BoldItalic.ttf in Resources */,
+				3BCCA0DEC07349C2A3EFF771 /* Lato-Hairline.ttf in Resources */,
+				A382C85BB1F94D65B4188101 /* Lato-HairlineItalic.ttf in Resources */,
+				82895DD3C8E44AF09F959B27 /* Lato-Italic.ttf in Resources */,
+				D649F7D0A60D4A89B04CC7C1 /* Lato-Light.ttf in Resources */,
+				12F48EE8FB9442FCB4AB9D70 /* Lato-LightItalic.ttf in Resources */,
+				82ABD2DA466C4D4194DD9857 /* Lato-Regular.ttf in Resources */,
+				3548FDF5310B43D6872BD25D /* Raleway-Black.ttf in Resources */,
+				DF9965AE65E3430AAE628CD2 /* Raleway-BlackItalic.ttf in Resources */,
+				BFE3743B8D9D4EE8B1663C34 /* Raleway-Bold.ttf in Resources */,
+				EB7A9088F6144D7E82D97041 /* Raleway-BoldItalic.ttf in Resources */,
+				A742E87C2A914A409A8D72E4 /* Raleway-ExtraBold.ttf in Resources */,
+				7426A7854FA34138A1ADE536 /* Raleway-ExtraBoldItalic.ttf in Resources */,
+				D435D17387174BDBABA52D8E /* Raleway-ExtraLight.ttf in Resources */,
+				08ED33369B0F43F5BF6C43F3 /* Raleway-ExtraLightItalic.ttf in Resources */,
+				05D52DCF72FB494C9F7EA9EA /* Raleway-Italic.ttf in Resources */,
+				C0CD6661D653433BB84D8D90 /* Raleway-Light.ttf in Resources */,
+				180621A6C0BC42E0AA7C0447 /* Raleway-LightItalic.ttf in Resources */,
+				1B1B4515A30C43E2A2E5627E /* Raleway-Medium.ttf in Resources */,
+				84FFA1F9BBCC4946A8233C8F /* Raleway-MediumItalic.ttf in Resources */,
+				22181B51C22E467E890AB8BF /* Raleway-Regular.ttf in Resources */,
+				8D9F633B245D48EBBD2D6AB6 /* Raleway-SemiBold.ttf in Resources */,
+				32B23B7F2398404D93B93885 /* Raleway-SemiBoldItalic.ttf in Resources */,
+				92F1FC64BAB34E109F078352 /* Raleway-Thin.ttf in Resources */,
+				579B29B293BD436892E1CF86 /* Raleway-ThinItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1413,21 +1301,9 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)..\node_modules\amazon-cognito-identity-jsios/**",
-					"$(SRCROOT)/../node_modules/react-native-nfc-manager/ios",
-					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
-				);
 				INFOPLIST_FILE = AaltoAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1435,6 +1311,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AaltoApp.app/AaltoApp";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-nfc-manager/ios",
+					"$(SRCROOT)/../node_modules/amazon-cognito-identity-js/ios/**",
+				);
 			};
 			name = Debug;
 		};
@@ -1443,21 +1329,9 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)..\node_modules\amazon-cognito-identity-jsios/**",
-					"$(SRCROOT)/../node_modules/react-native-nfc-manager/ios",
-					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
-				);
 				INFOPLIST_FILE = AaltoAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1465,6 +1339,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AaltoApp.app/AaltoApp";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-nfc-manager/ios",
+					"$(SRCROOT)/../node_modules/amazon-cognito-identity-js/ios/**",
+				);
 			};
 			name = Release;
 		};
@@ -1474,13 +1358,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = B57R8WBK6A;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)..\node_modules\amazon-cognito-identity-jsios/**",
-					"$(SRCROOT)/../node_modules/react-native-nfc-manager/ios",
-					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
-				);
 				INFOPLIST_FILE = AaltoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1491,6 +1368,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = AaltoApp;
 				VERSIONING_SYSTEM = "apple-generic";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-nfc-manager/ios",
+					"$(SRCROOT)/../node_modules/amazon-cognito-identity-js/ios/**",
+				);
 			};
 			name = Debug;
 		};
@@ -1499,13 +1381,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = B57R8WBK6A;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)..\node_modules\amazon-cognito-identity-jsios/**",
-					"$(SRCROOT)/../node_modules/react-native-nfc-manager/ios",
-					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
-				);
 				INFOPLIST_FILE = AaltoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1516,6 +1391,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = AaltoApp;
 				VERSIONING_SYSTEM = "apple-generic";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-nfc-manager/ios",
+					"$(SRCROOT)/../node_modules/amazon-cognito-identity-js/ios/**",
+				);
 			};
 			name = Release;
 		};
@@ -1531,20 +1411,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)..\node_modules\amazon-cognito-identity-jsios/**",
-					"$(SRCROOT)/../node_modules/react-native-nfc-manager/ios",
-					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
-				);
 				INFOPLIST_FILE = "AaltoApp-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1554,6 +1422,16 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-nfc-manager/ios",
+					"$(SRCROOT)/../node_modules/amazon-cognito-identity-js/ios/**",
+				);
 			};
 			name = Debug;
 		};
@@ -1569,20 +1447,8 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)..\node_modules\amazon-cognito-identity-jsios/**",
-					"$(SRCROOT)/../node_modules/react-native-nfc-manager/ios",
-					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
-				);
 				INFOPLIST_FILE = "AaltoApp-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1592,6 +1458,16 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-nfc-manager/ios",
+					"$(SRCROOT)/../node_modules/amazon-cognito-identity-js/ios/**",
+				);
 			};
 			name = Release;
 		};
@@ -1606,20 +1482,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)..\node_modules\amazon-cognito-identity-jsios/**",
-					"$(SRCROOT)/../node_modules/react-native-nfc-manager/ios",
-					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
-				);
 				INFOPLIST_FILE = "AaltoApp-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1629,6 +1493,16 @@
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AaltoApp-tvOS.app/AaltoApp-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-nfc-manager/ios",
+					"$(SRCROOT)/../node_modules/amazon-cognito-identity-js/ios/**",
+				);
 			};
 			name = Debug;
 		};
@@ -1643,20 +1517,8 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)..\node_modules\amazon-cognito-identity-jsios/**",
-					"$(SRCROOT)/../node_modules/react-native-nfc-manager/ios",
-					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
-				);
 				INFOPLIST_FILE = "AaltoApp-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1666,6 +1528,16 @@
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AaltoApp-tvOS.app/AaltoApp-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-nfc-manager/ios",
+					"$(SRCROOT)/../node_modules/amazon-cognito-identity-js/ios/**",
+				);
 			};
 			name = Release;
 		};

@@ -23,16 +23,12 @@ class SignUp extends Component<{}> {
 	state = initialState
 
 	componentWillReceiveProps(nextProps) {
-
 		const { auth } = this.props
 
 		const {
 			auth: { showSignUpConfirmationModal }
 		} = nextProps
-		if (
-			!showSignUpConfirmationModal &&
-			auth.showSignUpConfirmationModal
-		) {
+		if (!showSignUpConfirmationModal && auth.showSignUpConfirmationModal) {
 			this.setState(initialState)
 		}
 	}
