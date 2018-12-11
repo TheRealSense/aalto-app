@@ -9,8 +9,6 @@ import {
 	Dimensions,
 	Platform,
 	Linking,
-	Image,
-	TouchableOpacity
 } from 'react-native'
 //import { RNS3 } from 'react-native-aws3'
 import { connect } from 'react-redux'
@@ -149,12 +147,11 @@ class Home extends React.Component {
 	// }
 
 	render() {
-		const { uri } = this.state
 		return (
 			<View style={styles.container}>
 				<View style={styles.homeContainer}>
 					<Text style={styles.welcome}>Welcome</Text>
-					<TouchableOpacity onPress={this.takePic.bind(this)}>
+					{/* <TouchableOpacity onPress={this.takePic.bind(this)}>
 						<Image
 							style={{
 								paddingVertical: 5,
@@ -167,7 +164,7 @@ class Home extends React.Component {
 								uri: { uri }
 							}}
 						/>
-					</TouchableOpacity>
+					</TouchableOpacity> */}
 					<Animated.Image
 						source={require('../assets/boomboxcropped.png')}
 						style={{
