@@ -16,6 +16,7 @@ import { Auth } from 'aws-amplify'
 import NfcManager, { Ndef } from 'react-native-nfc-manager'
 import { logOut } from '../actions'
 import { colors, fonts } from '../theme'
+import fetchJson from '../util/fetchJson'
 
 const { width } = Dimensions.get('window')
 
@@ -50,6 +51,10 @@ class Home extends React.Component {
 				}
 			})
 			.catch(() => {})
+		const toolApiUrl = 'http://ec2-18-191-213-136.us-east-2.compute.amazonaws.com/tools'
+		const tools = fetchJson(toolApiUrl)
+		// eslint-disable-next-line no-console
+		console.log('Tools: ', tools)
 	}
 
 	componentWillUnmount() {
