@@ -125,13 +125,15 @@ class SignUp extends Component<{}> {
 				{showSignUpConfirmationModal && (
 					<Modal>
 						<View style={styles.modal}>
-							<Input
-								placeholder="Authorization Code"
-								type="authCode"
-								keyboardType="numeric"
-								onChangeText={this.onChangeText}
-								value={authCode}
-							/>
+							<View style={{width: '80%'}}>
+								<Input
+									type="authCode"
+									textAlign="center"
+									keyboardType="numeric"
+									onChangeText={this.onChangeText}
+									value={authCode}
+								/>
+							</View>
 							<Button
 								title="Confirm"
 								onPress={this.confirm.bind(this)}

@@ -4,11 +4,12 @@ import { StyleSheet, TextInput } from 'react-native'
 
 import { colors, fonts } from '../theme'
 
-export default ({ placeholder, onChangeText, type, ...props }) => (
+export default ({ placeholder, onChangeText, type, textAlign, ...props }) => (
 	<TextInput
 		autoCapitalize="none"
 		autoCorrect={false}
 		style={[styles.input]}
+		textAlign={textAlign}
 		placeholder={placeholder}
 		placeholderTextColor="#a0a0a0"
 		onChangeText={value => onChangeText(type, value)}

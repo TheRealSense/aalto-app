@@ -61,12 +61,14 @@ class SignIn extends Component<{}> {
 					<Input
 						placeholder="User Name"
 						type="username"
+						textAlign="left"
 						onChangeText={this.onChangeText}
 						value={username}
 					/>
 					<Input
 						placeholder="Password"
 						type="password"
+						textAlign="left"
 						onChangeText={this.onChangeText}
 						value={password}
 						secureTextEntry
