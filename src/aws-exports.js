@@ -8,26 +8,23 @@
 const awsmobile = {
 	aws_app_analytics: 'enable',
 	aws_cognito_identity_pool_id:
-		'us-east-2:4fda831a-2000-4f1b-8fd6-5433bb04fecb',
+		'us-east-2:a0c121c3-2ad5-4c55-8c02-43ce4ec6523d',
 	aws_cognito_region: 'us-east-2',
 	aws_content_delivery: 'enable',
-	aws_content_delivery_bucket: 'demomonday-hosting-mobilehub-165907723',
+	aws_content_delivery_bucket: 'creatio-hosting-mobilehub-1502655837',
 	aws_content_delivery_bucket_region: 'us-east-2',
 	aws_content_delivery_cloudfront: 'enable',
-	aws_content_delivery_cloudfront_domain: 'd704ovx18blyw.cloudfront.net',
-	aws_mobile_analytics_app_id: 'e8206de5e4954af6b19f71c08fb23433',
+	aws_content_delivery_cloudfront_domain: 'd1h6soy39ikw1m.cloudfront.net',
+	aws_mobile_analytics_app_id: '50c87ac4ee384932a1265829cb676c9e',
 	aws_mobile_analytics_app_region: 'us-east-1',
-	aws_project_id: '24a1379b-ae47-465e-80ff-8c5fca65cb78',
-	aws_project_name: 'demo-monday',
+	aws_project_id: '6f5c664b-6f5e-4e51-8778-b8a87d0ae23e',
+	aws_project_name: 'creatio',
 	aws_project_region: 'us-east-2',
-	aws_resource_name_prefix: 'demomonday-mobilehub-165907723',
+	aws_resource_name_prefix: 'creatio-mobilehub-1502655837',
 	aws_sign_in_enabled: 'enable',
-	aws_user_files: 'enable',
-	aws_user_files_s3_bucket: 'demomonday-userfiles-mobilehub-165907723',
-	aws_user_files_s3_bucket_region: 'us-east-2',
 	aws_user_pools: 'enable',
-	aws_user_pools_id: 'us-east-2_lvCmsAo6v',
-	aws_user_pools_web_client_id: '5mvhf5b6h2lc8omoba0vk9178e'
+	aws_user_pools_id: 'us-east-2_o1Op85Mw6',
+	aws_user_pools_web_client_id: '1n2i941batv5hjb6avjtnmdcgt'
 }
 
 export default awsmobile
