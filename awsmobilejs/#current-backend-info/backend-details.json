@@ -1,0 +1,106 @@
+{
+	"name": "aalto-app-2018-11-27-21-25-02",
+	"projectId": "9557388b-bfa2-4792-ac8d-73a305743d11",
+	"region": "us-east-2",
+	"state": "NORMAL",
+	"createdDate": "2018-11-27T19:25:07.358Z",
+	"lastUpdatedDate": "2018-11-27T19:25:12.536Z",
+	"consoleUrl": "https://console.aws.amazon.com/mobilehub/home#/9557388b-bfa2-4792-ac8d-73a305743d11/build",
+	"resources": [
+		{
+			"type": "AWS::Pinpoint::AnalyticsApplication",
+			"name": "aaltoapp20181127212502_MobileHub",
+			"arn": "c931ae7ddb954d28b9b9a8c5a6ffd178",
+			"feature": "analytics",
+			"attributes": {
+				"lastUpdateRequestID": "5c3219f7-ed8b-4e15-80b6-eca31a3d768f"
+			}
+		},
+		{
+			"type": "AWS::IAM::Policy",
+			"name": "aaltoapp_mobileanalytics_MOBILEHUB_214087335",
+			"arn": null,
+			"feature": "analytics",
+			"attributes": {
+				"authType": "unauthenticated",
+				"lastUpdateRequestID": "5c3219f7-ed8b-4e15-80b6-eca31a3d768f",
+				"role": "aaltoapp_unauth_MOBILEHUB_214087335"
+			}
+		},
+		{
+			"type": "AWS::Cognito::IdentityPool",
+			"name": "aaltoapp_MOBILEHUB_214087335",
+			"arn": "us-east-2:ddaf772b-5256-46d8-a0bd-e48e08eb6d4d",
+			"feature": "user-signin",
+			"attributes": {
+				"lastUpdateRequestID": "5c3219f7-ed8b-4e15-80b6-eca31a3d768f",
+				"poolid": "us-east-2:ddaf772b-5256-46d8-a0bd-e48e08eb6d4d",
+				"roleARNs": "arn:aws:iam::687850275037:role/aaltoapp_unauth_MOBILEHUB_214087335"
+			}
+		},
+		{
+			"type": "AWS::IAM::Role",
+			"name": "aaltoapp_unauth_MOBILEHUB_214087335",
+			"arn": "arn:aws:iam::687850275037:role/aaltoapp_unauth_MOBILEHUB_214087335",
+			"feature": "user-signin",
+			"attributes": {
+				"authType": "unauthenticated",
+				"lastUpdateRequestID": "5c3219f7-ed8b-4e15-80b6-eca31a3d768f"
+			}
+		},
+		{
+			"type": "AWS::S3::Bucket",
+			"name": "aaltoapp-hosting-mobilehub-214087335",
+			"arn": null,
+			"feature": "hosting",
+			"attributes": {
+				"lastUpdateRequestID": "5c3219f7-ed8b-4e15-80b6-eca31a3d768f",
+				"region": "us-east-2",
+				"s3-bucket-console-url": "https://s3.console.aws.amazon.com/s3/buckets/aaltoapp-hosting-mobilehub-214087335",
+				"s3-bucket-website-url": "https://s3.amazonaws.com/aaltoapp-hosting-mobilehub-214087335"
+			}
+		},
+		{
+			"type": "AWS::CloudFront::Distribution",
+			"name": "d1rp5mdmq3agaf.cloudfront.net",
+			"arn": null,
+			"feature": "hosting",
+			"attributes": {
+				"id": "E1C2MM5NSUH2BQ",
+				"lastUpdateRequestID": "5c3219f7-ed8b-4e15-80b6-eca31a3d768f"
+			}
+		},
+		{
+			"type": "AWS::IAM::Policy",
+			"name": "aaltoapp_hosting_MOBILEHUB_214087335",
+			"arn": null,
+			"feature": "hosting",
+			"attributes": {
+				"authType": "unauthenticated",
+				"lastUpdateRequestID": "5c3219f7-ed8b-4e15-80b6-eca31a3d768f",
+				"role": "aaltoapp_unauth_MOBILEHUB_214087335"
+			}
+		},
+		{
+			"type": "AWS::S3::Bucket",
+			"name": "aaltoapp-deployments-mobilehub-214087335",
+			"arn": null,
+			"feature": "common",
+			"attributes": {
+				"region": "us-east-2",
+				"s3-bucket-console-url": "https://s3.console.aws.amazon.com/s3/buckets/aaltoapp-deployments-mobilehub-214087335"
+			}
+		},
+		{
+			"type": "AWS::CloudFormation::Stack",
+			"name": "Development",
+			"arn": null,
+			"feature": "cloud-api",
+			"attributes": {
+				"primary": "true",
+				"region": "us-east-2",
+				"stateSummary": "NOT_YET_DEPLOYED"
+			}
+		}
+	]
+}
