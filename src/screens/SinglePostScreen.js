@@ -17,9 +17,9 @@ import {
 import type { NavigationScreen } from 'react-native-activity-feed'
 import RepostList from '../components/RepostList'
 
-import type { UserResponse } from '../types'
+import type { UserResponse } from '../../types'
 
-import ReplyIcon from '../images/icons/reply.png'
+import ReplyIcon from '../assets/icons/reply.png'
 
 type Props = {|
 	navigation: NavigationScreen

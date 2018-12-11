@@ -10,7 +10,7 @@ const GroupCard = ({ item }) => {
 				source={
 					image
 						? { uri: image }
-						: require('../images/placeholder.png')
+						: require('../assets/placeholder.png')
 				}
 				style={styles.background}
 				resizeMode="cover"
@@ -20,7 +20,7 @@ const GroupCard = ({ item }) => {
 				source={
 					icon
 						? { uri: icon }
-						: require('../images/icons/icon_placeholder.png')
+						: require('../assets/icons/icon_placeholder.png')
 				}
 				style={styles.icon}
 			/>

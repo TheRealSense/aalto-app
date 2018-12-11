@@ -4,7 +4,7 @@ import { ReactionList, SectionHeader } from 'react-native-activity-feed'
 
 import RepostItem from './RepostItem'
 
-import type { ReactionMap } from '../types'
+import type { ReactionMap } from '../../types'
 
 type Props = {
 	reactions: ?ReactionMap

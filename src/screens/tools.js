@@ -4,7 +4,7 @@ import { Text, ScrollView, StyleSheet, FlatList } from 'react-native'
 // eslint-disable-next-line import/no-extraneous-dependencies
 import PropTypes from 'prop-types'
 import { fonts } from '../theme'
-import tools from '../toolList'
+import tools from '../mock/toolList'
 import ToolHeader from '../components/ToolHeader'
 
 class Tools extends React.Component {

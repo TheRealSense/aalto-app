@@ -33,7 +33,7 @@ class SearchBox extends React.Component {
 					style={[styles.placeholder, { opacity: fadeAnim }]}
 				>
 					<Image
-						source={require('../images/icons/ios-search.png')}
+						source={require('../assets/icons/ios-search.png')}
 						style={{ width: 14, height: 14, top: 4 }}
 					/>{' '}
 					Search

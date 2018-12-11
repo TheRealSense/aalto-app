@@ -22,6 +22,9 @@ const awsmobile = {
 	aws_project_region: 'us-east-2',
 	aws_resource_name_prefix: 'creatio-mobilehub-1502655837',
 	aws_sign_in_enabled: 'enable',
+	aws_user_files: 'enable',
+	aws_user_files_s3_bucket: 'creatio-userfiles-mobilehub-1502655837',
+	aws_user_files_s3_bucket_region: 'us-east-2',
 	aws_user_pools: 'enable',
 	aws_user_pools_id: 'us-east-2_o1Op85Mw6',
 	aws_user_pools_web_client_id: '1n2i941batv5hjb6avjtnmdcgt'

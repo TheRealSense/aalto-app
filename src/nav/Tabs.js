@@ -2,8 +2,8 @@ import React from 'react'
 import { Image, StyleSheet } from 'react-native'
 import { createBottomTabNavigator } from 'react-navigation'
 import { colors, fonts } from '../theme'
-import SignIn from './SignIn'
-import SignUp from './SignUp'
+import SignIn from '../screens/SignIn'
+import SignUp from '../screens/SignUp'
 
 const styles = StyleSheet.create({
 	icon: {

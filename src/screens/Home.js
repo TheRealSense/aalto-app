@@ -8,15 +8,13 @@ import {
 	Animated,
 	Dimensions,
 	Platform,
-	Linking,
+	Linking
 } from 'react-native'
 //import { RNS3 } from 'react-native-aws3'
 import { connect } from 'react-redux'
 import { Auth } from 'aws-amplify'
 import NfcManager, { Ndef } from 'react-native-nfc-manager'
-// eslint-disable-next-line import/no-extraneous-dependencies
-//import imagePicker from 'react-native-image-picker'
-import { logOut } from '../actions'
+import { logOut } from '../actions/actions'
 import { colors, fonts } from '../theme'
 //import Config from '../aws-exports'
 

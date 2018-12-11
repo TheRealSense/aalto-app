@@ -3,11 +3,11 @@ import React from 'react'
 import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native'
 
 import { Avatar } from 'react-native-activity-feed'
-import FollowersIcon from '../../images/icons/followers.png'
+import FollowersIcon from '../../assets/icons/followers.png'
 
-import type { NotificationActivities } from '../../types'
+import type { NotificationActivities } from '../../../types'
 
-import { userOrDefault } from '../../utils'
+import { userOrDefault } from '../../../utils'
 
 type Props = {
 	activities: NotificationActivities

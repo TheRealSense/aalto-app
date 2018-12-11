@@ -3,12 +3,12 @@ import React from 'react'
 import { View, StyleSheet, Text } from 'react-native'
 import { UserBar, humanizeTimestamp } from 'react-native-activity-feed'
 import AttachedActivity from './AttachedActivity'
-import { userOrDefault } from '../utils'
+import { userOrDefault } from '../../utils'
 
-import HeartIcon from '../images/icons/heart.png'
-import RepostIcon from '../images/icons/repost.png'
+import HeartIcon from '../assets/icons/heart.png'
+import RepostIcon from '../assets/icons/repost.png'
 
-import type { NotificationActivities } from '../types'
+import type { NotificationActivities } from '../../types'
 
 type Props = {
 	activities: NotificationActivities

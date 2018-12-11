@@ -4,13 +4,13 @@ import { Text, View, StyleSheet, Image } from 'react-native'
 
 import { connect } from 'react-redux'
 
-import { authenticate, confirmUserLogin } from '../actions'
+import { authenticate, confirmUserLogin } from '../actions/actions'
 import { fonts } from '../theme'
 
 import Input from '../components/Input'
-import Button from '../components/Button'
+import Button from '../components/AuthButton'
 
-class SignIn extends Component<{}> {
+class SignIn extends Component {
 	state = {
 		username: '',
 		password: ''

@@ -12,9 +12,9 @@ import type { NavigationEventSubscription } from 'react-navigation'
 import Notification from '../components/Notification'
 import Follow from '../components/Notifications/Follow'
 
-import CategoriesIcon from '../images/icons/categories.png'
-import PostIcon from '../images/icons/post.png'
-import ReplyIcon from '../images/icons/reply.png'
+import CategoriesIcon from '../assets/icons/categories.png'
+import PostIcon from '../assets/icons/post.png'
+import ReplyIcon from '../assets/icons/reply.png'
 
 type Props = {|
 	navigation: NavigationScreen

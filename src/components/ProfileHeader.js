@@ -8,7 +8,7 @@ import { StreamApp, Avatar, AppCtx } from 'react-native-activity-feed'
 import type { FollowCounts } from 'getstream'
 import CoverImage from './CoverImage'
 import Count from './Count'
-import type { UserData } from '../types'
+import type { UserData } from '../../types'
 
 type Props = {}
 
@@ -47,8 +47,7 @@ class ProfileHeaderInner extends React.Component<PropsInner, State> {
 	render() {
 		const { user, userData } = this.state
 		let { following_count, followers_count } = user
-		let { name, url, desc, profileImage, coverImage } =
-			userData || {}
+		let { name, url, desc, profileImage, coverImage } = userData || {}
 
 		coverImage ? StatusBar.setBarStyle('light-content', true) : null
 

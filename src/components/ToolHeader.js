@@ -3,7 +3,7 @@ import React from 'react'
 import { View, Image, Text, StyleSheet } from 'react-native'
 
 import { colors, fonts } from '../theme'
-import tools from '../toolList'
+import tools from '../mock/toolList'
 
 // eslint-disable-next-line react/prop-types
 export default ({ id }) => (

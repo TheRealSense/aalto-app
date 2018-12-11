@@ -6,7 +6,7 @@ import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view
 import { Avatar, UploadImage, StreamApp } from 'react-native-activity-feed'
 import CoverImage from './CoverImage'
 import FormField from './FormField'
-import type { UserData, StreamAppCtx } from '../types'
+import type { UserData, StreamAppCtx } from '../../types'
 
 type Props = {|
 	registerSave: (saveFunc: () => any) => void
