@@ -11,10 +11,10 @@ import {
 } from 'react-native-activity-feed'
 import type { NavigationScreen } from 'react-native-activity-feed'
 import type { NavigationEventSubscription } from 'react-navigation'
-import type { UserResponse, ActivityData } from '../types'
+import type { UserResponse, ActivityData } from '../../types'
 
-import PostIcon from '../images/icons/post.png'
-import ReplyIcon from '../images/icons/reply.png'
+import PostIcon from '../assets/icons/post.png'
+import ReplyIcon from '../assets/icons/reply.png'
 
 type Props = {|
 	navigation: NavigationScreen

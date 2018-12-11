@@ -15,7 +15,7 @@ import {
 	CONFIRM_SIGNUP_FAILURE,
 	CONFIRM_LOGIN,
 	CONFIRM_LOGIN_SUCCESS
-} from './reducers/auth'
+} from '../reducers/auth'
 
 function signUp() {
 	return {

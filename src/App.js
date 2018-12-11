@@ -5,8 +5,8 @@ import { StatusBar } from 'react-native'
 import { connect } from 'react-redux'
 import { Auth } from 'aws-amplify'
 
-import Tabs from './auth/Tabs'
-import Nav from '../Social'
+import Tabs from './nav/Tabs'
+import Nav from './screens/Social'
 
 class App extends React.Component {
 	static navigationOptions = {

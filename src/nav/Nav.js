@@ -1,8 +1,8 @@
 import { createStackNavigator } from 'react-navigation'
 
-import Home from './Home'
-import Tools from './tools'
-import WebViewComponent from './webViewComponent'
+import Home from '../screens/Home'
+import Tools from '../screens/tools'
+import WebViewComponent from '../components/webViewComponent'
 
 const navStack = createStackNavigator({
 	Home: { screen: Home },

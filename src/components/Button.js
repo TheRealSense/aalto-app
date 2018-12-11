@@ -1,43 +1,31 @@
-/* eslint-disable react/prop-types */
 import React from 'react'
-import {
-	View,
-	Text,
-	StyleSheet,
-	TouchableOpacity,
-	ActivityIndicator
-} from 'react-native'
+import { Text, TouchableOpacity, StyleSheet } from 'react-native'
 
-import { fonts, colors } from '../theme'
-
-// eslint-disable-next-line react/display-name
-export default ({ title, onPress, isLoading }) => (
-	<TouchableOpacity onPress={onPress}>
-		<View style={styles.button}>
-			<Text style={[styles.buttonText]}>{title}</Text>
-			{isLoading && (
-				<View style={styles.activityIndicator}>
-					<ActivityIndicator color={colors.primary} />
-				</View>
-			)}
-		</View>
-	</TouchableOpacity>
-)
+// eslint-disable-next-line react/prop-types
+const Button = ({ children, pressed }) => {
+	return (
+		<TouchableOpacity style={styles.button} onPress={pressed}>
+			<Text style={styles.buttonText}>{children}</Text>
+		</TouchableOpacity>
+	)
+}
 
 const styles = StyleSheet.create({
 	button: {
-		marginTop: 25,
-		flexDirection: 'row'
+		backgroundColor: '#ffffff',
+		padding: 10,
+		paddingTop: 7,
+		paddingBottom: 7,
+		borderRadius: 4,
+		opacity: 0.9,
+		shadowColor: '#000',
+		shadowOffset: { width: 0, height: 0 },
+		shadowOpacity: 0.2,
+		shadowRadius: 5
 	},
 	buttonText: {
-		color: colors.primary,
-		fontFamily: fonts.light,
-		fontSize: 22,
-		letterSpacing: 0.5
-	},
-	activityIndicator: {
-		transform: [{ scale: 0.7 }],
-		marginTop: 3.5,
-		marginLeft: 5
+		fontSize: 12
 	}
 })
+
+export default Button

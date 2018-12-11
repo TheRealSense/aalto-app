@@ -6,10 +6,10 @@ import { Text, View, StyleSheet, Image, Modal } from 'react-native'
 import { connect } from 'react-redux'
 
 import { fonts } from '../theme'
-import { createUser, confirmUserSignUp } from '../actions'
+import { createUser, confirmUserSignUp } from '../actions/actions'
 
 import Input from '../components/Input'
-import Button from '../components/Button'
+import Button from '../components/AuthButton'
 
 const initialState = {
 	username: '',
@@ -19,7 +19,7 @@ const initialState = {
 	authCode: ''
 }
 
-class SignUp extends Component<{}> {
+class SignUp extends Component {
 	state = initialState
 
 	componentWillReceiveProps(nextProps) {
@@ -125,7 +125,7 @@ class SignUp extends Component<{}> {
 				{showSignUpConfirmationModal && (
 					<Modal>
 						<View style={styles.modal}>
-							<View style={{width: '80%'}}>
+							<View style={{ width: '80%' }}>
 								<Input
 									type="authCode"
 									textAlign="center"
