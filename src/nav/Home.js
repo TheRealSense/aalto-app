@@ -20,6 +20,9 @@ import { logOut } from '../actions'
 import { colors, fonts } from '../theme'
 //import Config from '../aws-exports'
 
+//import fetchJson from '../util/fetchJson'
+import fetchedTools from '../fetchedTools'
+
 const { width } = Dimensions.get('window')
 
 class Home extends React.Component {
@@ -57,6 +60,13 @@ class Home extends React.Component {
 				}
 			})
 			.catch(() => {})
+		fetchedTools()
+		/*
+		const toolApiUrl = 'http://ec2-18-191-213-136.us-east-2.compute.amazonaws.com/tools'
+		const fetchedTools = fetchJson(toolApiUrl)
+		// eslint-disable-next-line no-console
+		console.log(fetchedTools)
+		*/
 	}
 
 	componentWillUnmount() {
